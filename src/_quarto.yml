@@ -1,0 +1,22 @@
+---
+
+project:
+  type: website
+
+website:
+  title: "Andrew Zah's Website"
+  navbar:
+    left:
+      - href: src/index.qmd
+        text: Home
+    right:
+      - href: src/about.qmd
+        text: About
+      - href: src/cats.qmd
+        text: Cats
+
+format:
+  html:
+    theme: cosmo
+    css: src/styles.css
+    toc: true
