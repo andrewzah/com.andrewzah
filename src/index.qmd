@@ -1,5 +1,13 @@
 ---
-title: "Com.andrewzah-quarto"
+pagetitle: "Andrew Zah"
+toc: false
+#navbar: false
 ---
 
-Homepage.
+::: {.main}
+# Andrew
+
+Welcome to my web page. My name is Andrew Zah. I’m a programmer by trade, and I’m fascinated by the world we inhabit.
+
+My interests are mainly in computer science and programming, language learning, and fighting games, although I dabble in many hobbies.
+:::

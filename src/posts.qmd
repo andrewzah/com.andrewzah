@@ -1,0 +1,10 @@
+---
+title: "Posts"
+listing:
+  contents: p
+  sort:
+    - "date desc"
+    - title
+  categories: true
+  feed: true
+---

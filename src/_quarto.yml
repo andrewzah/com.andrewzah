@@ -3,20 +3,51 @@
 project:
   type: website
 
+  preview:
+    port: 5555
+    browser: true
+    watch-inputs: true
+    navigate: true
+
+  render: ["*.qmd", "*.md"]
+  resources:
+    - "static/*"
+
+pagetitle: " {{< meta title >}} | Andrew Zah"
+
 website:
-  title: "Andrew Zah's Website"
+  title: "Andrew Zah | 자준재"
+  description: ""
+  site-url: 'https://andrewzah.com'
+  repo-url: 'https://github.com/andrewzah/com.andrewzah'
+  repo-actions: [source, issue]
+  issue-url: 'https://github.com/andrewzah/com.andrewzah/issues'
+  open-graph: true
+  bread-crumbs: true
+  page-navigation: true
+
   navbar:
-    left:
-      - href: src/index.qmd
-        text: Home
     right:
-      - href: src/about.qmd
+      - href: about.qmd
         text: About
-      - href: src/cats.qmd
+      - href: cats.qmd
         text: Cats
+      - href: posts.qmd
+        text: Posts
+      - href: posts.xml
+        icon: rss
 
 format:
   html:
-    theme: cosmo
-    css: src/styles.css
+    theme:
+      # cosmo, journal, yeti
+      - cosmo
+      - styles.scss
     toc: true
+    grid:
+      body-width: 900px
+    code-link: true
+    anchor-sections: true
+    reference-location: margin
+    footnotes-hover: true
+    highlight-style: monokai

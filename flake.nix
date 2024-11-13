@@ -9,7 +9,7 @@
   outputs = { nix2container, flake-utils, nixpkgs, ... }:
     flake-utils.lib.eachDefaultSystem (system:
       let
-        pkgs = import nixpkgs { inherit system; };
+        pkgs = import nixpkgs { inherit pkgs system; };
         n2c = nix2container.packages."${system}".nix2container;
       in {
         packages = {
@@ -38,10 +38,11 @@
           };
         };
 
-        devShells = rec {
-          default = dev;
-          dev = pkgs.mkShell {
-            paths = [
+        devShells = {
+          default = pkgs.mkShell {
+            packages = [
+              pkgs.asciidoc
+              pkgs.pandoc
               pkgs.quartoMinimal
               (pkgs.texliveTeTeX.withPackages (ps: with ps; [
                 framed

@@ -1,0 +1,15 @@
+---
+execute:
+  freeze: true
+license: "CC BY-ND"
+
+toc: true
+toc-title: Table of Contents
+link-citations: true
+
+comments:
+  utterances:
+    repo: andrewzah/com.andrewzah
+    issue-term: title
+    theme: boxy-light
+    label: "comments :crystal_ball:"
