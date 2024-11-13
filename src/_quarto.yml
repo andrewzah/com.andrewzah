@@ -19,12 +19,16 @@ website:
   title: "Andrew Zah | 자준재"
   description: ""
   site-url: 'https://andrewzah.com'
-  repo-url: 'https://github.com/andrewzah/com.andrewzah'
-  repo-actions: [source, issue]
-  issue-url: 'https://github.com/andrewzah/com.andrewzah/issues'
   open-graph: true
   bread-crumbs: true
   page-navigation: true
+
+  repo-url: 'https://github.com/andrewzah/com.andrewzah'
+  issue-url: 'https://github.com/andrewzah/com.andrewzah/issues'
+  repo-subdir: 'src'
+  repo-branch: 'master'
+  repo-link-target: '_blank'
+  repo-actions: [source, issue]
 
   navbar:
     right:

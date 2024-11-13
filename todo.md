@@ -4,6 +4,7 @@
 - https://github.com/cynthiahqy/digital-garden/blob/main/posts/_metadata.yml
 
 ## small changes & fixes
+- friends / devault's webring
 - fonts
 - color scheme
 - code/pre background scss
