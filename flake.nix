@@ -41,13 +41,11 @@
         devShells = {
           default = pkgs.mkShell {
             packages = [
-              pkgs.asciidoc
-              pkgs.pandoc
               pkgs.quartoMinimal
               (pkgs.texliveTeTeX.withPackages (ps: with ps; [
                 framed
               ]))
-              #(pkgs.python3.withPackages (ps: with ps; [ jupyter matplotlib plotly ]))
+              (pkgs.python3.withPackages (ps: with ps; [ pandas pyyaml jupyter matplotlib plotly ]))
               #d2
               #gnuplot
             ];
