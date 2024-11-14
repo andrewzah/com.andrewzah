@@ -1,5 +1,6 @@
 ---
 title: "404"
+repo-actions: false
 ---
 
     I ate your web page.

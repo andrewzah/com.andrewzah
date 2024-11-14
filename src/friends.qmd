@@ -1,0 +1,10 @@
+---
+title: "Friends"
+description: "Links to websites run by my friends and colleagues"
+sidebar: false
+#page-navigation: false
+---
+
+* [Ian's Corner of the Web](https://ianwwagner.com)
+* [the website of jyn](https://jyn.dev)
+* [The Blog of Charles Daniels](http://cdaniels.net/index.html)

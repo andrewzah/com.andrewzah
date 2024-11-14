@@ -1,0 +1,35 @@
+---
+title: "Cats"
+page-layout: full
+repo-actions: false
+lightbox:
+  match: auto
+  loop: true
+---
+
+Penelope, Peanut, Kingsley, Princeton, Patches, Petunia, Georgie, Sweetheart, Mango, Sherlock
+
+:::: {.grid}
+::: {.g-col-4}
+![Penelope, Peanut](https://i.imgur.com/IpeUV1B.jpg){group="cats"}
+
+![Peanut](https://s3.amazonaws.com/andrewzah.com/cats/IMG_3480.jpg){group="cats"}
+
+![Kingsley](https://s3.amazonaws.com/andrewzah.com/cats/IMG_3121.jpg){group="cats"}
+
+![Patches](https://s3.amazonaws.com/andrewzah.com/cats/IMG_8493.jpg)
+:::
+
+::: {.g-col-8}
+![Penelope, Peanut](https://s3.amazonaws.com/andrewzah.com/cats/IMG_3006.jpg){group="cats"}
+
+![Kingsley](https://s3.amazonaws.com/andrewzah.com/cats/IMG_3649.jpg){group="cats"}
+
+![Kingsley](https://s3.amazonaws.com/andrewzah.com/cats/IMG_3334.jpg){group="cats"}
+
+![Kingsley & Princeton](https://s3.amazonaws.com/andrewzah.com/cats/IMG_3641.jpg)
+:::
+
+::: {.g-col-4}
+:::
+::::

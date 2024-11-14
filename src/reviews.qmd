@@ -1,14 +1,13 @@
 ---
-title: "Posts"
+title: "Reviews"
 repo-actions: false
 listing:
-  contents: p
+  contents: r
   sort:
     - "date desc"
     - title
   categories: true
   feed: true
-
 ---
 
-[RSS Link](/posts.xml)
+[RSS Link](/reviews.xml)

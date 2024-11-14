@@ -1,0 +1,11 @@
+---
+title: "What I'm currently working on"
+---
+
+## 2024-11-15
+I'm currently working on migrating my website from Hugo to Quarto.
+Aside from that, I'm making preparations to head back to the US, sadly. Once I'm there I plan on:
+
+* working on a secret side project with my brother
+* kickstarting my Mandarin learning journey
+* preparing for next year when I return to Korea and find an apartment

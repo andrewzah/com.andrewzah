@@ -7,6 +7,8 @@ toc: true
 toc-title: Table of Contents
 link-citations: true
 
+page-navigation: true
+
 comments:
   utterances:
     repo: andrewzah/com.andrewzah
