@@ -8,7 +8,7 @@ listing:
     - title
   categories: true
   feed: true
-
+  fields: ["date", "title", "reading-time", "word-count", "description", "image"]
 ---
 
 [RSS Link](/posts.xml)

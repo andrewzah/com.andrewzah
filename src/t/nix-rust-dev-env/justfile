@@ -1,0 +1,5 @@
+p:
+  quarto preview index.qmd
+
+r:
+  quarto render index.qmd

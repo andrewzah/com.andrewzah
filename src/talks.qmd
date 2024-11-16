@@ -1,0 +1,13 @@
+---
+title: "Talks"
+repo-actions: false
+listing:
+  contents: t
+  sort:
+    - "date desc"
+    - title
+  categories: true
+  feed: true
+---
+
+[RSS Link](/talks.xml)

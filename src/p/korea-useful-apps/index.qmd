@@ -1,0 +1,83 @@
+---
+title: "Useful apps for South Korea"
+description: "A collection of apps useful for travel and daily life in South Korea."
+categories: ["korea"]
+date: "2024-11-16"
+draft: true
+comments: false
+---
+
+Listed roughly in order of importance. Let me know if I missed any important ones!
+
+## Essential
+
+### KakaoTalk | 카카오톡
+
+### Papago | 파파고
+
+### Naver Dictionary | 네이버 사전
+
+### Airalo / Ubigi
+
+## Misc.
+
+### Catchtable | 케치테이블
+
+### Naver | 네이버
+
+### 17Track
+
+## Social
+
+### Meetup
+
+### 소모임
+
+## Navigation
+
+### Naver Maps | 네이버 지도
+
+###  Kakao Maps | 카카오맵
+
+### Ddareungi | 따릉이
+related: [How to use Ddareungi, Seoul’s rental bike](https://www.koreaherald.com/view.php?ud=20210708000313)
+
+### Kakao T | 카카오 T
+
+### k.ride
+
+### Korail
+
+## Shopping
+
+### Coupang | 쿠팡
+
+### Emart
+
+### GMarket
+
+## Food Delivery
+
+### Shuttle
+
+### 요기요
+
+### 배달민원
+
+## Sending Money
+
+### Revolut
+
+### Payco
+
+### Toss | 토스
+
+### 카카오 페이
+
+### Hana 은행EZ
+
+
+## AVOID THESE
+
+### 피터판 / 직방
+(instead search on Naver - 매물)

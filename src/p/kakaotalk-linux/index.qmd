@@ -1,7 +1,9 @@
 ---
-title: "How to run Kakaotalk on Linux"
-#slug = "how-to-kakaotalk-linux"
-aliases: [ "/posts/2020/how-to-kakaotalk-linux-2021/", "/posts/2020/how-to-kakaotalk-linux-2020/"]
+title: "How to run Kakaotalk on Linux (2020)"
+aliases: 
+  - "/posts/2020/how-to-kakaotalk-linux-2021"
+  - "/posts/2020/how-to-kakaotalk-linux-2020"
+  - "/posts/2020/how-to-kakaotalk-linux"
 date: "2020-10-05"
 categories: ["linux", "korean"]
 #keywords = "kakaotalk linux kkt 카카우톡 카톡 how to instruction tutorial"

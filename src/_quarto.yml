@@ -37,12 +37,14 @@ website:
 
   navbar:
     right:
+      - href: now.qmd
+        text: Now
       - href: posts.qmd
         text: Posts
       - href: reviews.qmd
         text: Reviews
-      - href: now.qmd
-        text: Now
+      - href: talks.qmd
+        text: Talks
       - sidebar:goodies
       #- href: "/gallery/cats/index.html"
       #  text: Cats

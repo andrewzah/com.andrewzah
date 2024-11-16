@@ -1,0 +1,96 @@
+Derive(
+  [
+    ("out","/nix/store/zwfk03379lp000ndxbhq4lnp9mxpq7zf-cargo-1.77.2","","")],
+  [
+    ("/nix/store/5fpjr0wp7h4bb7sc571rs77kam0gd0ym-cargo-check-hook.sh.drv", ["out"]),
+    ("/nix/store/6xzac264hkx4d7ykav3ci8dbn53h65py-file-5.45.drv",["dev"]),
+    ("/nix/store/ag3axi5wjlvrsc21z1ac1hy75inf4r90-bash-5.2p32.drv",["out"]),
+    ("/nix/store/ag3ww9r8p65nac9qm5zidjlv0xncp9dn-zlib-1.3.1.drv",["dev"]),
+    ("/nix/store/bsdnf7hjf6544nlzzqrdff4d91a6qnrq-python3-3.11.9.drv",["out"]),
+    ("/nix/store/cssqymfp6w40vl7lpmiq7fd2xqsd6xfs-rustc-bootstrap-wrapper-1.76.0.drv",["out"]),
+    ("/nix/store/d0c70k24pv70f0s1zlz515cksavm5frz-make-shell-wrapper-hook.drv", ["out"]),
+    ("/nix/store/f9ax8kf3i2l6q3x5za5skxlbnxyzdzx5-cargo-build-hook.sh.drv",["out"]),
+    ("/nix/store/j2g52jycp5v8jfw2xzkslxfm4n00xl98-stdenv-linux.drv",["out"]),
+    ("/nix/store/ls9ws7p09dpqyrn7l6dyizn6yzm078pd-install-shell-files.drv",["out"]),
+    ("/nix/store/mmfia7n3b9w3dg5wk9xiagzjq8hwc4yq-openssl-3.0.14.drv",["dev"]),
+    ("/nix/store/nxv2lg9nyqka8pvf54ynbn2j89xicqwf-cargo-setup-hook.sh.drv",["out"]),
+    ("/nix/store/pyqm3wmlcw7iglxq4w734fclv4ax7is1-cmake-3.29.2.drv",["out"]),
+    ("/nix/store/q91wga5dkkidskjdhkywnamahizlcsxg-cargo-install-hook.sh.drv",["out"]),
+    ("/nix/store/qd7q7v92spygp4mc34klv2ycfrfcs2gf-rustc-1.77.2-src.tar.gz.drv",["out"]),
+    ("/nix/store/rakbj4ddz85py53f8vcy2krkxznx88wv-rustc-wrapper-1.77.2.drv",["out"]),
+    ("/nix/store/v53ax095gdb9ngyipxx624blfrbpa53p-curl-8.7.1.drv",["dev"]),
+    ("/nix/store/yakyvb1ngd27776jf3x79biw4chisrv2-pkg-config-wrapper-0.29.2.drv",["out"])
+  ],
+  [
+    "/nix/store/nk6b2ckznjic5wj8ddw0wgdrn4mbz3lg-patch-registry-deps",
+    "/nix/store/v6x3cs394jgqfbi0a42pam708flxaphh-default-builder.sh"
+  ],
+  "i686-linux",
+  "/nix/store/f63b0i060fiw2ri9ayksbh11jz58xwba-bash-5.2p32/bin/bash",
+  ["-e","/nix/store/v6x3cs394jgqfbi0a42pam708flxaphh-default-builder.sh"],
+  [
+    ("PKG_CONFIG_ALLOW_CROSS","0"),
+    ("RUSTC_BOOTSTRAP","1"),
+    ("__structuredAttrs",""),
+    ("auditable",""),
+    ("buildAndTestSubdir","src/tools/cargo"),
+    ("buildInputs",
+      "/nix/store/q9r0z10py8m08slpqichgx9lf2vxg3wy-file-5.45-dev
+      /nix/store/4j6myfzavkv9qlgajxz91h4ahzzs0kzw-curl-8.7.1-dev
+      /nix/store/az0837zy4jn67sqb3711vkdc8c36ilq8-python3-3.11.9
+      /nix/store/p21q0vjkn6spv89splns5zn412izlqda-openssl-3.0.14-dev
+      /nix/store/b7q93l1hqcbhz12aqkjs1aj5q93c28rq-zlib-1.3.1-dev"),
+    ("builder", "/nix/store/f63b0i060fiw2ri9ayksbh11jz58xwba-bash-5.2p32/bin/bash"),
+    ("cargoBuildFeatures",""),
+    ("cargoBuildNoDefaultFeatures",""),
+    ("cargoBuildType","release"),
+    ("cargoCheckFeatures",""),
+    ("cargoCheckNoDefaultFeatures",""),
+    ("cargoCheckType","release"),
+    ("cargoVendorDir","vendor"),
+    ("checkPhase","# Disable cross compilation tests\nexport CFG_DISABLE_CROSS_TESTS=1\ncargo test\n"),
+    ("cmakeFlags",""),
+    ("configureFlags",""),
+    ("configurePhase","runHook preConfigure\nrunHook postConfigure\n"),
+    ("depsBuildBuild",""),
+    ("depsBuildBuildPropagated",""),
+    ("depsBuildTarget",""),
+    ("depsBuildTargetPropagated",""),
+    ("depsHostHost",""),
+    ("depsHostHostPropagated",""),
+    ("depsTargetTarget",""),
+    ("depsTargetTargetPropagated",""),
+    ("doCheck",""),
+    ("doInstallCheck","1"),
+    ("dontUpdateAutotoolsGnuConfigScripts","1"),
+    ("installCheckPhase","runHook preInstallCheck\nreadelf -a $out/bin/.cargo-wrapped | grep -F 'Shared library: [libcurl.so'\nrunHook postInstallCheck\n"),
+    ("mesonFlags",""),
+    ("name","cargo-1.77.2"),
+    ("nativeBuildInputs",
+      "/nix/store/0x6sfxrcrgj6y6907k4kqj3qch7v1m8f-pkg-config-wrapper-0.29.2 
+      /nix/store/58sc453c3df53znwdxcn8mbfm8wdxvai-cmake-3.29.2 
+      /nix/store/fk3kf3vcw6bckfmj8885slkyl2l7qkrq-install-shell-files 
+      /nix/store/6rx8cmm1czsnrylkfli2kng0rh4hm81n-make-shell-wrapper-hook 
+      /nix/store/4j6myfzavkv9qlgajxz91h4ahzzs0kzw-curl-8.7.1-dev 
+      /nix/store/b7q93l1hqcbhz12aqkjs1aj5q93c28rq-zlib-1.3.1-dev 
+      /nix/store/7i4l25ynmr9vyf2mk3rr6pafix8ljnq3-cargo-build-hook.sh 
+      /nix/store/ckpy8i83xjz0z390bwckxwml561g5f4y-cargo-check-hook.sh 
+      /nix/store/1w7khvnl9zj3dmi5185j2a3yb564wjgy-cargo-install-hook.sh 
+      /nix/store/z4ldn2h6i3n962vzyzvq1yjbsapj71yx-cargo-setup-hook.sh 
+      /nix/store/vl0z5f0kpn4m9hk16fm96c4s6ksl1q5x-rustc-bootstrap-wrapper-1.76.0"),
+    ("out","/nix/store/zwfk03379lp000ndxbhq4lnp9mxpq7zf-cargo-1.77.2"),
+    ("outputs","out"),
+    ("patchRegistryDeps","/nix/store/nk6b2ckznjic5wj8ddw0wgdrn4mbz3lg-patch-registry-deps"),
+    ("patches",""),
+    ("pname","cargo"),
+    ("postInstall","wrapProgram \"$out/bin/cargo\" --suffix PATH : \"/nix/store/ki12dbmya3xnckvyi22p89cnksc89wr4-rustc-wrapper-1.77.2/bin\"\n\ninstallManPage src/tools/cargo/src/etc/man/*\n\ninstallShellCompletion --bash --name cargo \\\n  src/tools/cargo/src/etc/cargo.bashcomp.sh\n\ninstallShellCompletion --zsh src/tools/cargo/src/etc/_cargo\n") ,
+    ("postUnpack","eval \"$cargoDepsHook\"\n\nexport RUST_LOG=\n"),
+    ("propagatedBuildInputs",""),
+    ("propagatedNativeBuildInputs",""),
+    ("src","/nix/store/7fqxp25nbh0mi3y6qcd706fq0bbg5zmh-rustc-1.77.2-src.tar.gz"),
+    ("stdenv","/nix/store/xrcc9y18fqcfnb6r692gqzv18nk13qhb-stdenv-linux"),
+    ("strictDeps","1"),
+    ("system","i686-linux"),
+    ("version","1.77.2")
+  ]
+)
