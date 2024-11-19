@@ -3,7 +3,7 @@ title: "Useful Apps for Learning Korean"
 date: "2024-11-16"
 categories: ["languages", "korean", "korea"]
 comments: false
-version: 0.9.0
+version: 1.0
 ---
 
 These are apps that I've found useful for learning Korean while living in Korea,
@@ -229,8 +229,8 @@ I haven't used this much myself, but I've heard good things from my friends abou
 ### Meetup
 This lets you find or organize meetup groups.
 Although you need to pay for the Pro plan to be able to make groups and host events.
-In Seoul there are *plenty* of language exchanges.
 
+In Seoul there are *plenty* of language exchanges.
 The trick is finding a group with lots of Koreans, as most of them are foreigner filled.
 
 [iOS App Store](https://apps.apple.com/us/app/meetup-social-events-groups/id375990038)
@@ -315,8 +315,7 @@ It's important to practice output when learning any language.
 It's better to do this with native speakers, but having mock conversations
 from your phone at any hour is pretty handy.
 
-The downside is LLMs are absolutely terrible for the environment. But go ahead, enjoy
-a conversation with the BS slop generator in exchange for gallons of water.
+The downside is LLMs are absolutely terrible for the environment.
 
 [iOS App Store](https://apps.apple.com/us/app/chatgpt/id6448311069)
 | [Google Play Store](https://play.google.com/store/apps/details?id=com.openai.chatgpt&hl=en_US)
@@ -326,14 +325,15 @@ a conversation with the BS slop generator in exchange for gallons of water.
 
 ### Duolingo 👎
 Duolingo was never good for CJK languages (Chinese, Japanese, Korean), and they're
-using AI (read: unverified perhaps-correct slop) instead of just working with native speakers.
+reportedly working more with AI instead of native speakers.
 
 If you only have ~15-20 mins, it's a far better use of your time to do Anki, Migaku, Pimsleur, Glossika, etc.
 
 ### ChatGPT (for knowledge questions) 👎
-ChatGPT is a BS generator that can't actually reason, and therefore doesn't know when it's wrong.
-Sometimes it's right, but often it's wrong, and the frustrating part is the wording is exactly the same.
+ChatGPT is a text generator that can't actually reason, and therefore doesn't know when it's wrong.
+Sometimes it's right, but it's frequently wrong, and both appear the same unless you're
+already knowledgeable about that topic.
 
-Un-learning incorrect information from slop is more work than learning correct information in the first place.
-This is my "old man yells at cloud" moment but there is a *glut* of information available online, for free, for most languages.
-We can refer to that instead of random slop.
+I think un-learning incorrect information from slop is more work than learning correct information in the first place.
+This is my "old man yells at cloud" moment but there is *so much information* available online, for free, for most languages.
+Content that has been made by humans with intent.

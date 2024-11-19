@@ -1,10 +1,11 @@
 ---
 title: "Philips TAH7508 Bluetooth Headphones"
-slug: "philips-tah7508-bluetooth-headphones"
+description: "These are an incredible value for the money."
+aliases:
+  - "/reviews/2024/philips-tah7508-bluetooth-headphones"
 date: "2024-08-18"
 date-modified: "2024-09-18"
 categories: ["audio"]
-description: "A look at the Philips TAH7508 Bluetooth Headphones."
 ---
 
 I generally travel with earbuds in order to cut down on luggage size, but
@@ -43,7 +44,12 @@ three laptops. All I have to do is disconnect with one and connect with another,
 **no app required**. I can't begin to tell you how much the Bose app annoys me,
 so this is a much welcome change.
 
-Though, there is a Philips app for things like settings and firmware updates.
+That said, there is a Philips app for things like settings and firmware updates.
+
+## Context
+
+I purchased these on Coupang for ₩71,000 KRW(roughly \$58.30 USD) on 8/11 and
+received them on 8/12.
 
 ## Update: 1 Month
 
@@ -54,11 +60,7 @@ charging every 2-3 days.
 
 The battery life is long enough that I don't find myself worrying at all.
 
-## Info
-
-I purchased these on Coupang for ₩71,000 KRW(roughly \$58.30 USD) on 8/11 and got them on 8/12.
-
-:::: {.callout-caution}
-This is a review after ~1 week of usage.
-I will update this review after a few months to see how it holds up.
+:::: {.callout-note}
+This is a review after ~1 month of usage.
+I will update this review after about 6 months to see how it holds up.
 ::::

@@ -1,6 +1,8 @@
 ---
 title: "How I acquired the Korean Digital Nomad Visa"
-aliases: ["/posts/2024/korean-digital-nomad-visa"]
+aliases:
+  - "/posts/2024/korean-digital-nomad-visa"
+  - "/p/korean-digital-nomad-visa.md"
 date: "2024-03-02"
 date-modified: "2024-11-13"
 categories: ["south korea"]
