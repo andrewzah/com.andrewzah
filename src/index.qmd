@@ -31,7 +31,7 @@ My interests are mainly in software development, language learning, and fighting
 I currently work for [Open Source Systems](https://ossys.com), on [AnalyticsHQ](https://analyticshq.com).
 
 ### Notable Posts
-[How I acquired the Korean Digital Nomad Visa](/p/korean-resident-card/):
+[How I acquired the Korean Digital Nomad Visa](/p/korean-digital-nomad-visa/):
 A detailed summary of all the steps I took to aquire this visa, as well as some tips for those looking to apply.
 
 [Korean Food & Cooking Vocabulary Reference](/p/korean-cooking-eating-reference/):

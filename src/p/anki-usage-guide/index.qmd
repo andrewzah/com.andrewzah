@@ -4,6 +4,8 @@ date: "2019-05-19"
 date-modified: "2024-11-13"
 categories: ["languages", "memorization", "anki"]
 description: "Anki is a great app, but making some modifications really makes it shine."
+aliases:
+  - "/posts/2019/better-anki-usage-guide"
 #aliases: [ "/posts/better-anki-usage-guide-2019/" ]
 #slug = "better-anki-usage-guide"
 ---
