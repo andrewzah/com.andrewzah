@@ -7,6 +7,7 @@ pkgs.mkShell {
   ];
   shellHook = ''
     echo "Loaded Quarto dev shell!"
+    export LD_LIBRARY_PATH="${pkgs.gcc}/libl:$LD_LIBRARY_PATH"
     alias v='nvim'
     alias j='just'
   '';

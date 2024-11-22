@@ -3,34 +3,32 @@ title: "Nix ❤️  Rust : Reproducible Dev Environments"
 author:
   - name: "Andrew Zah"
     email: "andrew.zah@analyticshq.com"
-categories: ["nix", "rust"]
-date: "2024-11-16"
+date: "2024-11-21"
 format:
   clean-revealjs:
     self-contained: true
     incremental: true
     logo: ./images/ahq-logo.png
+    footer: "[https://andrewzah.com/t/nix-rust-dev-env](https://andrewzah.com/t/nix-rust-dev-env)"
     #footer: "[https://github.com/andrewzah/talks/reproducible-rust-dev-envs-with-nix](https://github.com/andrewzah/talks/reproducible-rust-dev-envs-with-nix)"
 embed-resources: true
-draft: true
 ---
 
 ## about me
 
-:::: {.columns}
+:::: {layout-valign="bottom" layout="[[40,60]]"}
+![](./images/personal.jpg){.nostretch width=440}
 
-::: {.column width="40%"}
-![](./images/personal.jpg)
-:::
-
-::: {.column width="60%" .nonincremental}
+::: {.nonincremental}
 - Andrew Zah
-- Open Source Systems & AnalyticsHQ
+- currently work at Open Source Systems on AnalyticsHQ
+- started using Rust in ~2018 (~1.24)
+- started using Nix in 2024
 :::
-
 ::::
 
-## a (simple) end result
+
+## a possible end result
 ```{.nix code-line-numbers="|1|2|3-5|7-9|12-18|14"}
 { pkgs ? import <nixpkgs>{} }:
 pkgs.mkShell {
@@ -54,35 +52,35 @@ pkgs.mkShell {
 
 ## ok, but... why?
 
-- declare and track environment setup in code, as opposed to remembering to write down shell commands
-- project state is separated from system state, which makes swapping out versions less annoying
-- the benefits increase as non-rust dependencies are added: nixpkgs has over 119k currently
-- other tools like `nix-shell -p` make it dead simple to iterate on environments
+- declare environment state with code
+- project state is separated from system state
+- it scales well to other languages and tools (over 119k nix packages)
+- other bonus features like ephemeral, reproducible environments
 
 # nix concepts
-![things like "Nix" matter not to Kingsley](./images/kingsley.jpg)
+![Kingsley, definitely not thinking about Nix](./images/kingsley.jpg){fig-align="left"}
 
 ---
 
-nix refers to Nix the program and Nix the language
+![Nix the program/language, NixOS and nixpkgs](./images/nixtrinity.png){width=400}
 
-::: {.column width="45%"}
-![](./images/nixtrinity.png)
-:::
 
 ## quick nix facts
 
-- Nix can be defined as a purely functional language and package manager
+- Nix is a purely functional language and package manager
 
-- Nix (the language) is an expression-based language and each file must return a single value
+- Nix is a expression-based: each file must return a single value
 
-- nix (the program) can run on top of e.g. Debian or Arch: it is not limited to NixOS
+- nix (the program) can run on top of e.g. Debian or Arch
 
 - nix packages live independently in `/nix/store`
 
----
+## the nix store
 
-packages are referenced by their name + a hash, so multiple versions can exist:
+::: {.nonincremental}
+- packages are referenced by their name + a hash
+- multiple versions can exist:
+:::
 
 ```terminal
 /nix/store/a8j2rdc4rl26vdy4ywx55n68lml1qpj7-cargo-1.77.2.drv
@@ -92,9 +90,9 @@ packages are referenced by their name + a hash, so multiple versions can exist:
 /nix/store/zzpavqxszsrd05v81sd35q0pll7fmsz7-curl-8.7.1
 ```
 
----
 
-there is no global path
+## there is no global path
+
 ```terminal
 $ ldd zsh
   linux-vdso.so.1 (0x00007ffce19e7000)
@@ -107,9 +105,9 @@ $ ldd zsh
   /nix/store/c10zhkbp6jmyh0xc5kd123ga8yy2p4hk-glibc-2.39-52/lib/ld-linux-x86-64.so.2 => /nix/store/c10zhkbp6jmyh0xc5kd123ga8yy2p4hk-glibc-2.39-52/lib64/ld-linux-x86-64.so.2 (0x00007faadb1bb000)
 ```
 
----
+## derivations!
 
-a **derivation** is a type of value, that produces an output in `/nix/store`
+a **derivation** is a type of value that produces an output in `/nix/store`
 
 ```nix
 # my-derivation.nix
@@ -129,9 +127,7 @@ this derivation will be built:
   /nix/store/n34150nf03sh04j8mjzm8sawdqx9sgqi-sample.drv
 ```
 
----
-
-nix has automatic dependency tracking.
+## automatic dependency tracking via context
 
 ```nix
 # two-derivations.nix
@@ -161,7 +157,7 @@ these 2 derivations will be built:
 
 ---
 
-a derivation can be overriden later via attributes:
+## overriding derivations
 
 ```terminal
 nix-repl> pkgs.hello
@@ -172,7 +168,6 @@ nix-repl> pkgs.hello.outPath
 ```
 
 ```nix
-
 let
   pkgs = import <nixpkgs> {};
 in
@@ -182,7 +177,7 @@ in
 # -> «derivation /nix/store/0b00bv1hjv7v1dlnzgrv21caz4h7ihii-goodbye-2.12.1.drv»
 ```
 
----
+## overriding input arguments
 
 [nixos-24.05/pkgs/tools/networking/curl/default.nix](https://github.com/NixOS/nixpkgs/blob/nixos-24.05/pkgs/tools/networking/curl/default.nix#L50)
 
@@ -203,26 +198,16 @@ pkgs.curlMinimal.override {
 
 # it's rust time
 
-:::: {.columns}
-
-::: {.column width="40%" .nonincremental}
-:::
-
-::: {.column width="60%"}
-![](./images/rust-logo-256x256-blk.png)
-:::
-
-::::
+![](./images/rust-logo-256x256-blk.png){fig-align=left .nostretch}
 
 ## getting up and running
-- the fasted method is `nix-shell -p cargo rustc`
-- we can load packages found via [search.nixos.org](https://search.nixos.org)
-- we can even use `rustup` this way
-- downside: we cant change the versions of the packages this way
+- create ephemeral envs with `nix-shell -p cargo rustc`
+- find packages on [search.nixos.org](https://search.nixos.org) (even rustup!)
+- downside: we're stuck with the given versions
 - `nix-shell -p ` is great for ad-hoc and exploratory work
 
 ## shell.nix
-- `nix-shell` looks for a `shell.nix` in the current working directory
+- `nix-shell` looks for a `shell.nix` in $CWD
 
 - ```{.nix}
   { pkgs ? import <nixpkgs> {} }:
@@ -242,11 +227,22 @@ pkgs.curlMinimal.override {
   }
   ```
 
-## selecting rust versions
+## options for rust versions
 
+::: {.nonincremental}
 1. [nix-community/fenix](https://github.com/nix-community/fenix)
+    i. a tarball of *current* rust toolchains
+    ii. fenix monthly: toolchain on the 1st of each month
+    iii. provides rust-analyzer
 
 2. [oxalica/rust-overlay](https://github.com/oxalica/rust-overlay)
+    i. a tarball of rust toolchains going back to 1.29
+    ii. provides rust-analyzer
+
+3. [ipetkov/crane](https://github.com/ipetkov/crane)
+    i. fetches via Cargo.lock
+    ii. automatically caches & vendors dependencies
+:::
 
 ## fenix example
 ```{.nix}
@@ -336,13 +332,22 @@ packages = [
 ]
 ```
 
-## crane
+## ending thoughts
+- for very simple projects, rustup is easier
+- as project deps grow, the value of nixpkgs becomes apparent
+- nix code is self-documenting: no more out of date install docs
 
-## cargo2nix
+# References & Further Reading
 
-## conclusion
+::: {.nonincremental}
+- [ayats.org's Nix Lectures, part 1](https://ayats.org/blog/nix-tuto-1) and [part 2](https://ayats.org/blog/nix-tuto-2)
+- [Nixpkgs Manual: stdenv & mkDerivation](https://nixos.org/manual/nixpkgs/stable/#part-stdenv)
+- [Nixpkgs Manual: mkShell](https://nixos.org/manual/nixpkgs/stable/#sec-pkgs-mkShell)
+- [Nixpkgs Manual: Rust](https://nixos.org/manual/nixpkgs/stable/#rust)
+- [nix.dev](https://nix.dev/)
+- [crane: cross-compiling](https://crane.dev/examples/cross-rust-overlay.html)
+:::
 
-# References
-- https://ayats.org/blog/nix-tuto-1
-- https://ayats.org/blog/nix-tuto-2
-- https://github.com/cargo2nix/cargo2nix
+# any questions?
+
+![](./images/kingsley-box.jpg){width=400}
