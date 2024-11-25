@@ -72,4 +72,5 @@ format:
     anchor-sections: true
     reference-location: margin
     footnotes-hover: true
-    highlight-style: monokai
+    highlight-style: a11y
+    image-lazy-loading: true

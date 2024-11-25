@@ -11,23 +11,25 @@ Penelope, Peanut, Kingsley, Princeton, Patches, Petunia, Georgie, Sweetheart, Ma
 
 :::: {.grid}
 ::: {.g-col-4}
-![Penelope, Peanut](https://i.imgur.com/IpeUV1B.jpg){group="cats"}
+![Penelope, Peanut](https://s3.amazonaws.com/com.andrewzah.images/cats/penelope-peanut-pad.jpg){group="cats"}
 
-![Peanut](https://s3.amazonaws.com/andrewzah.com/cats/IMG_3480.jpg){group="cats"}
+![Peanut](https://s3.amazonaws.com/com.andrewzah.images/cats/peanut-veranda.jpg){group="cats"}
 
-![Kingsley](https://s3.amazonaws.com/andrewzah.com/cats/IMG_3121.jpg){group="cats"}
+![Kingsley](https://s3.us-east-1.amazonaws.com/com.andrewzah.images/cats/kingsley-veranda.jpg){group="cats"}
 
-![Patches](https://s3.amazonaws.com/andrewzah.com/cats/IMG_8493.jpg)
+<!--
+![Patches](){group="cats"}
+-->
 :::
 
 ::: {.g-col-8}
-![Penelope, Peanut](https://s3.amazonaws.com/andrewzah.com/cats/IMG_3006.jpg){group="cats"}
+![Penelope, Peanut](https://s3.us-east-1.amazonaws.com/com.andrewzah.images/cats/peanut-penelope-piano.jpg){group="cats"}
 
-![Kingsley](https://s3.amazonaws.com/andrewzah.com/cats/IMG_3649.jpg){group="cats"}
+![Kingsley](https://s3.us-east-1.amazonaws.com/com.andrewzah.images/cats/kingsley-veranda-leg.jpg){group="cats"}
 
-![Kingsley](https://s3.amazonaws.com/andrewzah.com/cats/IMG_3334.jpg){group="cats"}
+![Kingsley](https://s3.us-east-1.amazonaws.com/com.andrewzah.images/cats/kingsley-counter.jpg){group="cats"}
 
-![Kingsley & Princeton](https://s3.amazonaws.com/andrewzah.com/cats/IMG_3641.jpg)
+![Kingsley & Princeton](https://s3.us-east-1.amazonaws.com/com.andrewzah.images/cats/kingsley-princeton-veranda-table.jpg){group="cats"}
 :::
 
 ::: {.g-col-4}

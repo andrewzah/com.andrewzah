@@ -49,7 +49,7 @@ clocking in at `68MB` (compressed).
 
 This means all we have to do is create a `docker-compose` file:
 
-```{yaml}
+``` {.yaml}
 ---
 services:
   git:
@@ -81,7 +81,7 @@ Gone are the days of manually handling certificates and needing
 
 Caddy’s `Caddyfile` syntax is simple:
 
-```{caddyfile}
+``` {.txt}
 # the domain
 https://git.example.com {
   # tls info for Let's Encrypt
@@ -99,7 +99,7 @@ https://git.example.com {
 
 In order to run Caddy, we need to add it as a service:
 
-```{yaml}
+``` {.yaml}
 services:
   http:
     image: docker.io/library/caddy:latest
@@ -138,7 +138,7 @@ You may have noticed by now that we’re missing one big thing… a
 database. This one is simple, because Gitea is smart and runs on
 Postgres:
 
-```{yaml}
+``` {.yaml}
 services:
   git_db:
     image: docker.io/library/postgres:15-alpine
@@ -152,7 +152,7 @@ services:
 
 In `secret.env`, you’ll need to set the following:
 
-```{txt}
+``` {.txt}
 POSTGRES_USER=xxxx
 POSTGRES_PASSWORD=yyyyyy
 POSTGRES_DB=git
@@ -161,7 +161,7 @@ POSTGRES_DB=git
 Now that we have a database service, we can add this to the `gitea`
 service:
 
-```{yaml}
+``` {.yaml}
 services:
   git:
     depends_on:
@@ -177,7 +177,7 @@ default port `22`, nor did we start listening to it!
 So let’s listen to `22` for git, and `2223` for regular ssh. Edit, with
 sudo permissions, `/etc/ssh/sshd_config`:
 
-```{txt}
+``` {.conf}
 # What ports, IPs and protocols we listen for
 Port 2223
 Port 22
@@ -186,7 +186,7 @@ Port 22
 At this time, I would also recommend disabling password login, as one
 can never have enough security.
 
-```{conf}
+``` {.conf}
 PermitRootLogin without-password
 PasswordAuthentication no
 ```
@@ -203,7 +203,7 @@ output to `~/.ssh/authorized_keys`! You’ll be locked out otherwise.
 Lastly, now that we’re listening on port `22`, add this to the
 `docker-compose.yml`:
 
-```{yaml}
+``` {.yaml}
 services:
   git:
     image: gitea/gitea:latest
@@ -216,7 +216,7 @@ Now when we do `git push origin master`, with `origin` set to
 
 In total, it should look like this:
 
-```{yaml}
+``` {.yaml}
 ----
 services:
   git:

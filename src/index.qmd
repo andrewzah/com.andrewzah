@@ -1,6 +1,6 @@
 ---
 pagetitle: "Andrew Zah"
-image: ./about.jpg
+image: "https://s3.amazonaws.com/com.andrewzah.images/misc/about-cropped.jpg"
 toc: false
 repo-actions: false
 about:
