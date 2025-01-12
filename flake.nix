@@ -1,11 +1,6 @@
 {
   description = "andrewzah.com shell + docker image with Quarto/LaTeX/python";
 
-  inputs = {
-    nix2container.url = "github:nlewo/nix2container";
-    flake-utils.url = "github:numtide/flake-utils";
-  };
-
   outputs = { nix2container, flake-utils, nixpkgs, ... }:
     flake-utils.lib.eachDefaultSystem (system:
       let
@@ -53,4 +48,10 @@
         };
       }
     );
+
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+    nix2container.url = "github:nlewo/nix2container";
+    flake-utils.url = "github:numtide/flake-utils";
+  };
 }
