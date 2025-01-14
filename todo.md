@@ -1,3 +1,6 @@
+! sigh - migrate to Quartz
+- example: https://turntrout.com/welcome
+
 ! [ ] resources.qmd
 ! [ ] nav: cool-links.qmd
 - [ ] check code/pre background scss
