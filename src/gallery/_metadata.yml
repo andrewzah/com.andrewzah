@@ -1,9 +1,0 @@
----
-sidebar: false
-
-## toc must be false for .column-page to be properly centered
-format:
-  html:
-    toc: false
-
-engine: knitr

@@ -1,5 +1,5 @@
 b:
-  nix run .#container.copyToDockerDaemon
+  nix build .#website
 
-p:
-  docker push docker.io/andrewzah/com-andrewzah:latest
+c:
+  nix run .#container.copyToDockerDaemon
