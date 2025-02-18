@@ -30,9 +30,8 @@
                   ./content \
                   ./quartz.config.ts
 
-                cp ${./src/quartz.config.ts} ./quartz.config.ts
                 mkdir content
-                cp -r ${./src/content}/* ./content
+                cp -r ${./content}/* ./content
 
                 $out/bin/quartz build
                 mv ./public $out/public
@@ -42,7 +41,7 @@
             };
           in pkgs.stdenv.mkDerivation {
             name = "andrewzah-quartz-website";
-            src = ./src/content;
+            src = ./content;
 
             installPhase = ''
               mkdir -p $out/var/www
@@ -61,6 +60,7 @@
               paths = [
                 caddyfile
                 website
+                pkgs.bashInteractiveFHS
               ];
               pathsToLink = [ "/bin" "/etc" "/var" ];
             };
@@ -88,7 +88,9 @@
     flake-utils.url = "github:numtide/flake-utils";
 
     quartz-src = {
-      url = "github:jackyzha0/quartz/v4";
+      #url = "github:jackyzha0/quartz/v4";
+      #url = "github:andrewzah/quartz/v4";
+      url = "git+file:///home/dragon/programming/quartz";
       flake = false;
     };
 

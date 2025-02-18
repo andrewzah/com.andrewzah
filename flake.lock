@@ -112,18 +112,17 @@
     "quartz-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1724874625,
-        "narHash": "sha256-POdUD8ct1Zfe2gKQW2V5ZM0f9xPfZ3Nh3kcWe6K/lh8=",
-        "owner": "jackyzha0",
-        "repo": "quartz",
-        "rev": "6715079a8908e8807291415eb3dee506574b5459",
-        "type": "github"
+        "lastModified": 1739883524,
+        "narHash": "sha256-YgsjxOS5qrfn3RqBGxoRiTONX7tLiZO2OYX6Lss+PL0=",
+        "ref": "refs/heads/v4",
+        "rev": "e92929dd28f328c2bbe1714a10927a5df933df6c",
+        "revCount": 1401,
+        "type": "git",
+        "url": "file:///home/dragon/programming/quartz"
       },
       "original": {
-        "owner": "jackyzha0",
-        "ref": "v4",
-        "repo": "quartz",
-        "type": "github"
+        "type": "git",
+        "url": "file:///home/dragon/programming/quartz"
       }
     },
     "root": {
