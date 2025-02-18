@@ -3,12 +3,11 @@ title: "Reaching Master Rank in Street Fighter 6"
 date: "2025-02-16"
 tags: ["games", "hobbies"]
 description: "I've reached master rank in street fighter 6 and I have some thoughts about it."
-draft: false
+draft: true
 ---
 
-Some people try to chalk up differences due to "talent", but it ultimately boils down to hours spent grinding.
-There are nuances with people being naturally good at specific things, but every pro, and every player at master rank
-is there because they spent time and energy grinding.
+- talent vs. studies , grinding , training
+- hours spent
 
 [![](./images/sf6-master-rank/avg-game-hours-per-rank.png)](./images/sf6-master-rank/avg-game-hours-per-rank.png)
 credit: [Tweet](https://x.com/CatCammy6/status/1860478062711714186) | [@CatCammy6 on Twitter](https://x.com/CatCammy6)
