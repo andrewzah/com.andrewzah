@@ -17,7 +17,7 @@
           website = let
             npmBuild = pkgs.buildNpmPackage {
               name = "quartz";
-              npmDepsHash = "sha256-1G0bT1l/Itmkr9rbTnO3pyoUG/R6WCnjAsP4vnlxij8=";
+              npmDepsHash = "sha256-5v0VEK5X4YMcWGTdaKg+Q0gdgwERZzbx1TMFj33k3BE=";
               src = quartz-src;
               dontNpmBuild = true;
 
@@ -26,9 +26,7 @@
                 npmInstallHook
 
                 cd $out/lib/node_modules/@jackyzha0/quartz
-                rm -rf \
-                  ./content \
-                  ./quartz.config.ts
+                rm -rf ./content
 
                 mkdir content
                 cp -r ${./content}/* ./content
