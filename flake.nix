@@ -89,6 +89,7 @@
       #url = "github:jackyzha0/quartz/v4";
       #url = "github:andrewzah/quartz/v4";
       url = "git+file:///home/dragon/programming/quartz";
+      #url = "git+file:///home/dragon/programming/quartz?ref=v4";
       flake = false;
     };
 
