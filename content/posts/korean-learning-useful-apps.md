@@ -37,7 +37,7 @@ I think this one speaks for itself.
 You can save and re-arrange dictionaries, so I've set it up like so:
 
 - Korean-English dictionary: definitions in English
-- 국어사전: defintions in Korean
+- 국어사전: definitions in Korean
 - 한자사전: Hanja definitions
 - Papapgo: I have the app installed but it's a convenient link.
 

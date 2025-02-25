@@ -8,7 +8,10 @@ aliases:
   - "/posts/2019/better-anki-usage-guide"
 ---
 
-As you may or may not know, I love [Anki](https://apps.ankiweb.net/), the spaced repetition flash cards app. I’ve been using it in my Korean learning journey for almost one and a half years now and I’ve written about it before. It’s a good app, but you can have a much better experience by making some modifications to it.
+I love [Anki](https://apps.ankiweb.net/), the spaced repetition flash cards app.
+I’ve been using it in my [[korean-learning-journey-update-1|Korean learning journey]] for almost
+one and a half years now and I’ve written about it before. It’s a good app,
+but you can have a much better experience by making some modifications to it.
 
 If you don’t know what Anki is or why it’s compelling,
 I recommend you read [*Augmenting Long-term Memory*](http://augmentingcognition.com/ltm.html),
@@ -31,7 +34,7 @@ Let’s say you have learned a card, but when you review it you make a mistake i
 
 By default, Anki resets your progress to that of a new card. So even if you had worked the card up to a ~4 month interval, now you have to see it in 1 day, 2 days, 4 days, all over again…
 
-Even if you forget a card, you still had learned it at one point. Which means re-learning it is now significantly easier. By completely resetting the card’s intervals, Anki is wasting your time. It slowly conditions you to be unwilling to press `Again`, which is not desireable at all.
+Even if you forget a card, you still had learned it at one point. Which means re-learning it is now significantly easier. By completely resetting the card’s intervals, Anki is wasting your time. It slowly conditions you to be unwilling to press `Again`, which is not desirable at all.
 
 **Solution**: In your deck’s options group under Lapses, change `New interval` to `70%`. This means if you forget a card, the new interval will be 70% of the old one. As for why I chose 70%, it just felt like an appropriate amount–feel free to play with different percentages to see what works best for you.
 
@@ -184,7 +187,7 @@ This addon shows extra information of the due cards and returns the expected tim
 
 [Enhance main window](https://ankiweb.net/shared/info/877182321)
 
-This adds more stats to the main window via columns. As you can see in that link, the default config adds quite a lot, so I [modified my config](https://gist.github.com/azah/0391ce0fc3e90f3defea75ef518fd195) to pare it down, which looks like this:
+This adds more stats to the main window via columns. As you can see in that link, the default config adds quite a lot, so I [modified my config](https://gist.github.com/andrewzah/0391ce0fc3e90f3defea75ef518fd195) to pare it down, which looks like this:
 
 ![A picture displaying how the anki main window looks different with this plugin enabled](https://s3.amazonaws.com/andrewzah.com/posts/017/enhanced.png)
 
@@ -242,15 +245,15 @@ Is there a plugin or change that you feel like I missed? Let me know.
 
 ## Further Reading
 I have also written a companion post on
-[general things to avoid while using Anki](../anki-things-to-avoid) that I recommend you check out.
+[anki-things-to-avoid|general things to avoid while using Anki] that I recommend you check out.
 
--   [Anki Documentation](https://apps.ankiweb.net/docs/manual.html)
--   [Anki’s Starting Ease Factor Setting](https://eshapard.github.io/anki/ankis-initial-ease-factor-setting.html)
--   [Augmenting Long-term Memory](http://augmentingcognition.com/ltm.html)
--   [Everything I Know: Strategies, Tips, and Tricks for Anki](https://senrigan.io/blog/everything-i-know-strategies-tips-and-tricks-for-spaced-repetition-anki/)
--   [John Baez on Research Tactics](https://intelligence.org/2014/02/21/john-baez-on-research-tactics/)
--   [Supermemo Algorithm](https://www.supermemo.com/en/archives1990-2015/english/ol/sm2)
--   [Supermemo Research](https://www.supermemo.com/en/archives1990-2015/english/ol/beginning#Algorithm)
+- [Anki Documentation](https://apps.ankiweb.net/docs/manual.html)
+- [Anki’s Starting Ease Factor Setting](https://eshapard.github.io/anki/ankis-initial-ease-factor-setting.html)
+- [Augmenting Long-term Memory](http://augmentingcognition.com/ltm.html)
+- [Everything I Know: Strategies, Tips, and Tricks for Anki](http://web.archive.org/web/20240617122836/https://senrigan.io/blog/everything-i-know-strategies-tips-and-tricks-for-spaced-repetition-anki/)
+- [John Baez on Research Tactics](https://intelligence.org/2014/02/21/john-baez-on-research-tactics/)
+- [Supermemo Algorithm](https://www.supermemo.com/en/archives1990-2015/english/ol/sm2)
+- [Supermemo Research](https://www.supermemo.com/en/archives1990-2015/english/ol/beginning#Algorithm)
 
 # References
 

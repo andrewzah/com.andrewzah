@@ -641,7 +641,7 @@ etc., in a stew pot, adding broth, and boiling it.|
 |물냉면 |Chilled Buckwheat Noodle Soup|
 |비빔냉면 |Spicy Mixed Buckwheat Noodles|
 |자장면 |Black bean noodles|
-|잡채 |sweet potatoe noodles|
+|잡채 |sweet potato noodles|
 |신라면 |Shin Ramen|
 |비빔국수 |Spicy Mixed Noodles|
 |수제비 |Sujebi (Korean Style Pasta Soup)|
@@ -698,7 +698,7 @@ etc., in a stew pot, adding broth, and boiling it.|
 |Word |Meaning|
 |---|---|
 |순대 |Korean blood sausage, made by steaming seasoned sweet potato, noodles, tofu, glutinous rice, etc. which are stuffed into a pig’s intestine|
-|샌드위치 |sandwhich|
+|샌드위치 |sandwich|
 |감자 튀김 |french fries, chips|
 |도넛 |doughnut|
 |피자 |pizza|

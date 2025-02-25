@@ -25,13 +25,12 @@ Although I would like to only have one backpack, it’s just not feasible with m
 Initially I wore my
 [redwing iron rangers](https://www.redwingheritage.com/mens-leather-boots-shoes/6-inch-boots/iron-ranger-08111.html)
 + [outlier slim dungarees](https://shop.outlier.nyc/shop/retail/slim-dungarees.html)
-+ [wool & prince work shirt](https://woolandprince.com/collections/retiring/products/work-shirt-olive-drab-twill)
++ wool & prince work shirt
 combos more often, but I slowly transitioned to a more relaxed look.
 Then I typically wore my nike free runs or common projects, nike or adidas tapered sweats,
 and a plain tshirt or long sleeve shirt.
 This was great in Korea since more casual streetwear is a common aesthetic there,
-but in Japan I felt like a bit of a slob, woefully underdressed compared to the
-ubiquituous salaryman look there.
+but in Japan I felt like a bit of a slob, woefully underdressed compared to the ubiquitous salaryman look there.
 
 If I stayed there longer I would probably go back to a red wings + chinos + collared shirt look or even wear suits daily. I actually really like wearing suits. Summer or winter, it doesn’t matter. But wearing suits daily while living out of 2 backpacks…? Now that would be a challenge (maybe for a future trip..?).
 
@@ -45,7 +44,7 @@ Making friends was fairly easy as I went to a language exchange. Unlike most exc
 
 By far the thing I miss the most about Korea is its food. I ate out all the time since the local food was so good and cheap, and I took some cooking lessons too! Once I got back to the states I found a local Korean market and I get a jar of kimchi every two weeks.
 
-Unlike the US, mom and pop restaurants are ubiqituous. It’s hard to walk anywhere without there being some sort of local 똑볶이, 김밥, 김치밥 etc joint nearby. When I was lazy, I used the Shuttle app to have food delivered to me. Korea has delivery drivers everywhere on mopeds, sometimes taking orders for multiple places. It’s also possible to get groceries delivered in around 1 day, but since I was traveling from airbnb to airbnb I didn’t really want to deal with that.
+Unlike the US, mom and pop restaurants are ubiqitous. It’s hard to walk anywhere without there being some sort of local 똑볶이, 김밥, 김치밥 etc joint nearby. When I was lazy, I used the Shuttle app to have food delivered to me. Korea has delivery drivers everywhere on mopeds, sometimes taking orders for multiple places. It’s also possible to get groceries delivered in around 1 day, but since I was traveling from airbnb to airbnb I didn’t really want to deal with that.
 
 Japan was much more difficult for me since, well, I don’t speak the language very much.
 
@@ -73,7 +72,7 @@ I chose Yokohama due to the Shinkansen station. I had no idea it had a sizable C
 
 ### Clothes
 
-I wore all of the shoes I took (redwing iron ranger boots, black/gray nike free runs, common projects). I also bought a 4th pair of red [vans old skools](https://www.vans.com/shop/old-skool-black-white). I like shoes, gimme a break.
+I wore all of the shoes I took (redwing iron ranger boots, black/gray nike free runs, common projects). I also bought a 4th pair of red vans old skools. I like shoes, gimme a break.
 
 Next time I would probably take my black wolverine 1k mile boots, the red old skools, and the nike free runs. The common projects are holding up excellently though–I just maintain them with rinsing and brushing with soap.
 
@@ -97,7 +96,7 @@ Korea’s green line gets very crowded at 6pm due to employees and students retu
 
 This is where the Goruck bags aren’t that great. They’re huge, especially the GR2! I would never use either as daily bags with commuting on trains or busses. I specifically packed a day bag for this reason. Of course if you drive everywhere in the US like I do in South Carolina, the GR2 works just great in your passenger seat.
 
-![One of the ubiquituous underground malls connected to Korean subway stations](https://s3.amazonaws.com/andrewzah.com/posts/retrospective/DM0H95.jpg)
+![One of the many underground malls connected to Korean subway stations](https://s3.amazonaws.com/andrewzah.com/posts/retrospective/DM0H95.jpg)
 
 A lot of subway stations in Korea are connected to underground malls. Some of them are enormous! Vendors hawk wares like food, clothes, cosmetics, power adapters, and more.
 
@@ -237,9 +236,9 @@ Keep in mind even with these additions I was still able to travel with everythin
 
 #### sweatpants x3
 
-- [Adidas tiro 19 training pants](https://www.adidas.com/us/tiro-19-training-pants/D95958.html)
-- [Nike sportswear tech fleece](https://www.nike.com/t/sportswear-tech-fleece-mens-joggers-gXTOoz1v/805162-010)
-- [Nike Jordan dri-fit 23](https://www.nike.com/t/jordan-dri-fit-23-alpha-mens-basketball-pants-2KTrDkJG/889711-011) - but in black/white instead of black/red.
+- Adidas tiro 19 training pants
+- Nike sportswear tech fleece joggers
+- Nike Jordan dri-fit 23 pants
 
 I decided to get the nikes after trying them out in a store. The tech fleece is lighter than expected but takes forever to dry. (It’s not common to have a dryer in Korea). The jordan dri-fits are amazing because they’re so light, but unless I’m running in them I tend to pair them with the smartwool base layer.
 
@@ -266,7 +265,7 @@ However I despise taking notes on the ipad, or any other digital device I’ve t
 Stupid goodreads 5 issues I had:
 
 - The stylus kept on changing to eraser mode randomly.
-- I wanted to study kanji by writing 1 character ~50 times, so I thought "surely goodnotes can handle resizing a textbox". Andrew, you utter fool. Resizing a textbox causes the character to become clipped for no discernable reason.
+- I wanted to study kanji by writing 1 character ~50 times, so I thought "surely goodnotes can handle resizing a textbox". Andrew, you utter fool. Resizing a textbox causes the character to become clipped for no discernible reason.
 
 Goodnotes’ saving grace is with annotating PDFs… once I save them in the right format to my phone, of course.
 
@@ -336,7 +335,7 @@ The following items are if I’m working, writing, etc.
 
 For EDC both gorucks are far too bulky. They’re fine in the US since I drive everywhere, but have you ever been on a crowded train in Asia at rush hour?
 
-So I use an [Invisible Rolltop by OPPOSETHIS](https://www.opposethis.com/products/invisible-rolltop), which packs into the GR2 when I fly. I chose this for three reasons:
+So I use the Invisible Rolltop by OPPOSETHIS (edit from 2025: now defunct), which packs into the GR2 when I fly. I chose this for three reasons:
 
 1.  As mentioned, the gr1 was too bulky for daily use.
 2.  I wanted a sleek, minimal backpack that doesn’t scream "I am a traveler/tourist".

@@ -9,8 +9,8 @@ tags: ["south korea", "digital nomad"]
 description: "I documented the entire process for the Korean F-1-D 'Workation' / Digital Nomad Visa."
 ---
 
-In December of 2023, the South Korean government
-[announced](https://www.forbes.com/sites/kaitlynmcinnis/2023/12/31/korea-officially-announces-new-digital-nomad-visa/announced) a new F-1-D visa, called the [Digital Nomad / Workcation](https://www.immigration.go.kr/immigration_eng/1832/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGaW1taWdyYXRpb25fZW5nJTJGMjI5JTJGNTgwMTc5JTJGYXJ0Y2xWaWV3LmRvJTNG)
+In December of 2023, the South Korean government a new F-1-D visa, called the
+[Digital Nomad / Workcation](https://www.immigration.go.kr/immigration_eng/1832/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGaW1taWdyYXRpb25fZW5nJTJGMjI5JTJGNTgwMTc5JTJGYXJ0Y2xWaWV3LmRvJTNG)
 visa (hereafter referred to as the Workcation visa).
 
 I’ve lived in Korea before and I love Seoul, so I jumped at the chance to get a more
@@ -62,8 +62,7 @@ This is going to vary by embassy, especially as this is quite a new visa. These 
 > [!warning]
 > Make sure your passport doesn’t expire within 6 months of your application, or your travel. Knowing that the South Korean government can be sticklers about things, consider expanding that to 12 months.
 
-When I applied in February, I went by the requirements of the
-[Consulate in Chicago, Illinois](https://overseas.mofa.go.kr/us-chicago-en/wpge/m_20640/contents.do)
+When I applied in February, I went by the requirements of the Consulate in Chicago,
 although I fell under the jurisdiction of the
 [Consulate in Atlanta, Georgia](https://overseas.mofa.go.kr/us-atlanta-en/brd/m_4849/view.do?seq=13&page=1),
 since the latter didn’t have the requirements posted on their website at the time.
@@ -120,9 +119,8 @@ so we followed that. Signed on company letterhead, it listed:
 ### Federal Background Check
 
 This one is pretty simple for U.S. citizens.
-Visit an approved FBI channeler like Identogo or Accurate Biometrics, or fill out the
-[FD-258 FBI Fingerprint Form](https://www.fbi.gov/file-repository/identity-history-summary-request-fd-258-110120)
-and get fingerprints done at a local police station.
+Visit an approved FBI channeler like Identogo or Accurate Biometrics, or fill out
+the FD-258 FBI Fingerprint Form and get fingerprints done at a local police station.
 
 I’ve done Identogo before so I went with that. It’s \$50 USD and the process takes about
 10 minutes once you make an appointment.
@@ -179,6 +177,9 @@ You should be fine, but we’re waiting on more data points to be sure. We do kn
 **What types of insurance can I use?**
 
 What the South Korean government is looking for is insurance that covers medical emergencies and repatriation. It’s possible your insurance already provides that, or offer it as an addon. SafetyWing covers that and is quite convenient to set up.
+
+## Other Posts in this Series
+- [[korean-resident-card|Why and How I acquired a Korean Resident Card]]
 
 ## Other Resources
 

@@ -24,7 +24,7 @@ source, but it’s fairly heavy in resource usage and it has a lot of
 features I don’t really need.
 
 So in comes [Gitea](https://gitea.io/en-US/Gitea), a community fork of
-[Gogs](https://gogs.io/Gogs), which is written in go-lang and is quite
+[Gogs](https://gogs.io/), which is written in go-lang and is quite
 lightweight. More importantly, it can mirror with both Github and
 Gitlab, giving us data redundancy. Let’s get into it!
 

@@ -73,7 +73,7 @@ I recommend using Anki’s
 [parent/subdecks feature](https://docs.ankiweb.net/deck-options.html#subdecks).
 That way you can use a premade deck *and* your personal deck at the same time. Spiffy.
 
-I explain subdecks a bit more in my [Better Anki Usage](../anki-usage-guide#utilizing-subdecks) post.
+I explain subdecks a bit more in my [[anki-usage-guide#anki-subdecks|Better Anki Usage]]) post.
 
 ## Not making use of reverse cards
 
@@ -95,7 +95,9 @@ I include 2-3 sample sentences in all the cards I make, as well as notes, common
 
 It’s can be tempting to give a review card the ‘Easy’ grade, quickly giving it large intervals. Don’t do this unless you know the word quite well (in which case, why even have the card at all?). Otherwise the interval will increase rapidly, and you’ll have forgotten it by then.
 
-Actually, due to how Anki works, pressing `Easy` (or `Hard`) *permanently* modifies that card, giving it way longer intervals than what it should be. I go over this in detail in my [Better Anki Usage](../anki-usage-guide#why-behavior-changing-plugins-are-needed) post. Almost all long-term Anki users that I talk to do not press `Easy` often, or ever.
+Actually, due to how Anki works, pressing `Easy` (or `Hard`) *permanently* modifies that card, giving it way longer intervals than what it should be. I go over this in detail in my
+[[anki-usage-guide#why-behavior-changing-plugins-are-needed|Better Anki Usage]] post.
+Almost all long-term Anki users that I talk to do not press `Easy` often, or ever.
 
 ## Not doing Anki daily
 
@@ -147,4 +149,4 @@ unless you like being super duper efficient.
 
 These are some of the problems I’ve encountered while using Anki. Are there other ones you think I should talk about? Let me know.
 
-If you’re interested in Anki, I recommend reading my companion [Better Anki Usage](../anki-usage-guide) post to fix some of Anki’s wonky defaults and unintuitive behavior.
+If you’re interested in Anki, I recommend reading my companion [[anki-usage-guide|Better Anki usage]] post to fix some of Anki’s wonky defaults and unintuitive behavior.

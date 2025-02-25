@@ -12,7 +12,11 @@ was in Korean, and thus the notifications would be in Korean… Silly me.
 
 ![An example notification from my phone](https://s3.amazonaws.com/andrewzah.com/posts/2020_01_11_garmin_fenix/garmin-notification.jpg)
 
-The 6 series is not cheap, starting at \$600, with the 6X starting at [$750](https://buy.garmin.com/en-US/US/p/641530/pn/010-02159-13). The solar editions go for $1,000 and $1,150. This specific variant currently retails for $850, so when I found it on discount for $500 I hopped on that.
+The 6 series is not cheap, starting at \$600, with the 6X starting at
+[\$750](https://buy.garmin.com/en-US/US/p/641530/pn/010-02159-13).
+The solar editions go for \$1,000 and \$1,150.
+This specific variant currently retails for \$850, so
+when I found it on discount for \$500 I hopped on that.
 
 Garmin has an application called Express which has a `Language Files` section, but it’s empty (and still is as of 2021-07-08). When I spoke to customer support, they told me Korean wasn’t supported at this time. I was directed to [a page on supported languages](https://support.garmin.com/en-US/?faq=bUNm3O11dH04aqGOFtBsz6), and a page [to share ideas](https://www.garmin.com/en-US/forms/ideas/) but it errors on submission.
 
