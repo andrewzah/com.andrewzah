@@ -6,6 +6,31 @@ description: "I've reached master rank in street fighter 6 and I have some thoug
 draft: true
 ---
 
+Just over a year and a half 's passed since
+[Street Fighter 6](https://en.wikipedia.org/wiki/Street_Fighter_6)
+came out. It's been my first serious foray into the franchise-
+I've dabbled here and there with
+[Street Fighter III: Third Strike](https://en.wikipedia.org/wiki/Street_Fighter_III:_3rd_Strike)
+but went back to other games.
+
+## Preface
+
+Being my first real traditional fighter, I decided to play through the entirety of
+World Tour (WT). WT functions as both the open-world story and the defacto tutorial for SF6.
+There is a built in tutorial as well, but that's more of a quick primer.
+
+I recall finishing WT after about ~20-25? hours.
+My goal then was to start honing a character to hop into online play.
+
+## First Steps
+
+Ryu and Ken appealed to me a bit since I like the shoto archetype, but
+watching Nuckledu play Guile at CEO (the first SF6 tournament) sealed the deal.
+Guile is a polarizing character due to his zoning and simple kit, but he just
+looked so *stylish*.
+
+So I started looking up some of his bread & butter combos (BnBs).
+
 - talent vs. studies , grinding , training
 - hours spent
 

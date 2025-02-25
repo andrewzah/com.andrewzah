@@ -11,13 +11,13 @@ My interests are mainly in software development, language learning, and fighting
 I currently work for [Open Source Systems](https://ossys.com), on [AnalyticsHQ](https://analyticshq.com).
 
 ## Some Notable Posts
-[[Posts/korean-digital-nomad-visa | How I acquired the Korean Digital Nomad Visa]]:
-A detailed summary of all the steps I took to aquire this visa, as well as some tips for those looking to apply.
+[[posts/korean-digital-nomad-visa| How I acquired the Korean Digital Nomad Visa]]:
+A detailed summary of all the steps I took to acquire this visa, as well as some tips for those looking to apply.
 
-[[Posts/anki-usage-guide | Better Anki Usage Guide]]: An opinion guide to Anki,
+[[posts/anki-usage-guide| Better Anki Usage Guide]]: An opinion guide to Anki,
 formed over years of usage to study Korean vocabulary.
 
-[[Posts/korean-learning-useful-apps | Useful Apps for Learning Korean]]:
+[[posts/korean-learning-useful-apps| Useful Apps for Learning Korean]]:
 What it says on the tin, with my two cents thrown in.
 
 ## Some of my projects that I think are cool
