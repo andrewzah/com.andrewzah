@@ -11,3 +11,6 @@ dr:
 
 u:
   nix flake lock --update-input quartz-src
+
+l:
+  lychee --cache content/posts/*.md

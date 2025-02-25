@@ -71,12 +71,15 @@
         };
 
         devShells.default = pkgs.mkShell {
-          packages = with pkgs; [
-            nodejs_22
-            prettierd
+          packages = (with pkgs; [
             eslint_d
             language-servers.packages.${system}.typescript-language-server
-          ];
+            nodejs_22
+            prettierd
+
+            typos
+            lychee # link checker
+          ]);
         };
       }
     );
