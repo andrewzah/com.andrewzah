@@ -1,8 +1,8 @@
-d:
-  nix develop --profile /tmp/com-andrewzah-profile
-
 db:
   nix run .#container.copyToDockerDaemon
+
+nd:
+  nix develop --profile /tmp/com-andrewzah-profile
 
 do:
   just docker-build

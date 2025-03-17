@@ -1,5 +1,7 @@
 ## immediate todo
 - fixes
+  - REMOVE hugo admonitions theme, replicate via render hooks + css
+  - code in single backticks, aka just <p><code></code></p>
   - decide on date / no date in slug
     - research SEO ramifications
   - fix any remaining .adoc pages & links

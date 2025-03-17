@@ -28,15 +28,16 @@
           website = pkgs.stdenv.mkDerivation {
             name = "andrewzah-hugo-website";
             src = ./.;
-            nativeBuildInputs = (with pkgs; [hugo_145 go]);
+            nativeBuildInputs = (with pkgs; [git hugo_145 go]);
 
             buildPhase = let
               hugoVendor = pkgs.stdenv.mkDerivation {
                 name = "andrewzah-hugo-website-vendor";
                 src = ./.;
-                nativeBuildInputs = [ pkgs.go hugo_145 ];
+                nativeBuildInputs = (with pkgs; [ go git hugo_145 ]);
 
                 buildPhase = ''
+                  cd src
                   hugo mod vendor
                 '';
 
@@ -44,20 +45,23 @@
                   cp -r _vendor $out
                 '';
 
-                outputHash = "sha256-pQpattmS9VmO3ZIQUFn66az8GSmB4IvYhTTCFn6SUmo=";
+                outputHash = "sha256-IWeh65+iMET/9iKjhQEVLkCpiwRA6I3se3xFjp4q360=";
                 outputHashAlgo = "sha256";
                 outputHashMode = "recursive";
               };
             in ''
+              ln -s ${hugoVendor} src/_vendor
+              ls -la src/_vendor
               cd ./src
-              ln -s ${hugoVendor} _vendor
               hugo --minify
             '';
 
             installPhase = ''
               mkdir -p $out/var/www
-              cp ./src/public $out/var/www/com.andrewzah
+              cp -r ./public $out/var/www/com.andrewzah
             '';
+
+            dontFixup = true;
           };
 
           container = n2c.buildImage {
