@@ -1,10 +1,12 @@
-docker-build:
-  nix-build personal-site-docker.nix
-  docker load < ./result
+d:
+  nix develop --profile /tmp/com-andrewzah-profile
 
-docker:
+db:
+  nix run .#container.copyToDockerDaemon
+
+do:
   just docker-build
   just docker-push
 
-docker-push:
+dp:
   docker push andrewzah/personal_site:latest

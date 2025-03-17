@@ -1,4 +1,3 @@
-# https://github.com/foo-dogsquared/hugo-theme-arch-terminal/blob/master/MANUAL.adoc
 baseURL = "https://andrewzah.com/"
 languageCode = "en-us"
 theme = "zah"
@@ -9,49 +8,25 @@ destination = "./public"
 title = "Andrew Zah's Site"
 titleCaseStyle = 'none'
 
+[module]
+[[module.imports]]
+  path = "github.com/KKKZOZ/hugo-admonitions"
+
 [params.author]
-name = "Andrew Zah"
-email = "zah@andrewzah.com"
+  name = "Andrew Zah"
+  email = "zah@andrewzah.com"
 
 [taxonomies]
   tag = 'tags'
   series = 'series'
 
 [markup]
-  [markup.asciidocext]
-    extensions = ["asciimath", "asciidoctor-mathematical", "asciidoctor-html5s", "asciidoctor-diagram"]
-    workingFolderCurrent = true
-
-  [markup.asciidocext.attributes]
-    #my-base-url = "https://andrewzah.com/"
-    mathematical-inline = "true"
-    mathematical-format = "svg"
-    source-highlighter = "rouge"
-    sectnumlevels = 1
-    docinfo = "shared"
-    #sectnums = "yes"
-    sectlinks = "yes"
-    experimental = "yes"
-    # vars
-    background-color = "#fdfdfd"
-    # symbols
-    sym_neutral1 = "&#8857;"
-    sym_neutral = "&#183;"
-    sym_darr = "&#x1F86B;"
-    sym_rarr = "&#x1F86A;"
-    sym_uarr = "&#x1F869;"
-    sym_larr = "&#x1F868;"
-    sym_drarr = "&#x1F86E;"
-    sym_dlarr = "&#x1F86F;"
-    sym_urarr = "\u2191"
-    sym_ularr = "\u2196"
-    sym_clarr = "\u27FB"
-    sym_cdarr = "\u21A7"
-
-[security]
-  [security.exec]
-    allow = [ "asciidoctor" ]
-    osEnv = ['(?i)^(PATH|HOME|PATHEXT|APPDATA|TMP|TEMP|TERM)$']
+  [markup.highlight]
+    # abap, autumn, github
+    # https://gohugo.io/quick-reference/syntax-highlighting-styles/#github
+    style = 'github'
+    lineNos = 'false'
+    #lineNumbersInTable = 'true'
 
 [menu]
   [[menu.main]]
@@ -65,11 +40,6 @@ email = "zah@andrewzah.com"
     url = "cats/"
 
   [[menu.main]]
-    identifier = "openbook"
-    name = "openbook"
-    url = "openbook/"
-
-  [[menu.main]]
     identifier = "posts"
     name = "posts"
     url = "posts/"
@@ -78,3 +48,17 @@ email = "zah@andrewzah.com"
     identifier = "reviews"
     name = "reviews"
     url = "reviews/"
+
+# symbols
+# sym_neutral1 = "&#8857;"
+# sym_neutral = "&#183;"
+# sym_darr = "&#x1F86B;"
+# sym_rarr = "&#x1F86A;"
+# sym_uarr = "&#x1F869;"
+# sym_larr = "&#x1F868;"
+# sym_drarr = "&#x1F86E;"
+# sym_dlarr = "&#x1F86F;"
+# sym_urarr = "\u2191"
+# sym_ularr = "\u2196"
+# sym_clarr = "\u27FB"
+# sym_cdarr = "\u21A7"

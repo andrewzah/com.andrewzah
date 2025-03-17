@@ -29,6 +29,14 @@
   {{ .Content }}
 
   {{- if or (eq .Type "posts") (eq .Type "reviews") -}}
+    <!--
+    {{ $related := first 3 (where (where .Site.RegularPages.ByDate.Reverse ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
+    Related Posts
+
+    {{ range $i, $e := $related }}
+      <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+    {{ end }}
+    -->
     <div style="font-style: italic;" class="post-tags">
       {{ .Page.WordCount }} words
       &mdash;

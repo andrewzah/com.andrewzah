@@ -1,93 +1,105 @@
 {
-  description = "andrew's flake for ruby + custom gems + hugo/d2";
-
-  inputs = {
-    flake-utils.url = "github:numtide/flake-utils";
-    ruby-nix.url = "github:inscapist/ruby-nix";
-    nix2container.url = "github:nlewo/nix2container";
-    bundix = {
-      url = "github:inscapist/bundix/main";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    bob-ruby = {
-      url = "github:bobvanderlinden/nixpkgs-ruby";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-  };
-
-  outputs = { nix2container, flake-utils, nixpkgs, ruby-nix, bundix, bob-ruby, ... }:
-    flake-utils.lib.eachDefaultSystem (system:
-      let
+  description = "Builds a Quartz website and Docker image.";
+  outputs = {
+    self,
+    nixpkgs,
+    nix2container,
+    flake-utils,
+  }:
+    flake-utils.lib.eachDefaultSystem (
+      system: let
+        pkgs = nixpkgs.legacyPackages.${system};
         n2c = nix2container.packages."${system}".nix2container;
-        pkgs = import nixpkgs {
-          inherit system;
-          overlays = [ bob-ruby.overlays.default ];
-        };
-        rubyNix = ruby-nix.lib pkgs;
-        gemset = if builtins.pathExists ./gemset.nix then import ./gemset.nix else { };
-        gemConfig = {};
 
-        # see: https://github.com/bobvanderlinden/nixpkgs-ruby/blob/master/ruby/versions.json
-        ruby = pkgs."ruby-3.1.6";
-        bundixCLI = bundix.packages."${system}".default;
+        hugo_145 = pkgs.hugo.overrideAttrs (prevAttrs: rec {
+          version = "0.145.0";
 
-        # Use these instead of the original `bundle <mutate>` commands
-        bundleLock = pkgs.writeShellScriptBin "bundle-lock" ''
-          export BUNDLE_PATH=vendor/bundle
-          bundle lock
-        '';
-        bundleUpdate = pkgs.writeShellScriptBin "bundle-update" ''
-          export BUNDLE_PATH=vendor/bundle
-          bundle lock --update
-        '';
-        env = (rubyNix { inherit gemset ruby; name = "my-rails-app"; gemConfig = pkgs.defaultGemConfig // gemConfig; }).env;
-      in
-      {
-        packages = {
-          image = n2c.buildImage {
-            name = "docker.io/andrewzah/personal_site";
+          src = pkgs.fetchFromGitHub {
+            owner = "gohugoio";
+            repo = "hugo";
+            tag = "v${version}";
+            hash = "sha256-5SV6VzNWGnFQBD0fBugS5kKXECvV1ZE7sk7SwJCMbqY=";
+          };
+
+          vendorHash = "sha256-aynhBko6ecYyyMG9XO5315kLerWDFZ6V8LQ/WIkvC70=";
+        });
+      in {
+        packages = rec {
+          website = pkgs.stdenv.mkDerivation {
+            name = "andrewzah-hugo-website";
+            src = ./.;
+            nativeBuildInputs = (with pkgs; [hugo_145 go]);
+
+            buildPhase = let
+              hugoVendor = pkgs.stdenv.mkDerivation {
+                name = "andrewzah-hugo-website-vendor";
+                src = ./.;
+                nativeBuildInputs = [ pkgs.go hugo_145 ];
+
+                buildPhase = ''
+                  hugo mod vendor
+                '';
+
+                installPhase = ''
+                  cp -r _vendor $out
+                '';
+
+                outputHash = "sha256-pQpattmS9VmO3ZIQUFn66az8GSmB4IvYhTTCFn6SUmo=";
+                outputHashAlgo = "sha256";
+                outputHashMode = "recursive";
+              };
+            in ''
+              cd ./src
+              ln -s ${hugoVendor} _vendor
+              hugo --minify
+            '';
+
+            installPhase = ''
+              mkdir -p $out/var/www
+              cp ./src/public $out/var/www/com.andrewzah
+            '';
+          };
+
+          container = n2c.buildImage {
+            name = "docker.io/andrewzah/com-andrewzah";
             tag = "latest";
 
             copyToRoot = let
               caddyfile = pkgs.writeTextDir "/etc/caddy/Caddyfile" (builtins.readFile ./Caddyfile);
-            in
-            pkgs.buildEnv {
+            in pkgs.buildEnv {
               name = "img-root";
-              paths = [
-                caddyfile
-                pkgs.caddy
-                (pkgs.callPackage ./personal-site.nix {
-                  inherit pkgs env;
-                })
-              ];
-              pathsToLink = [ "/bin" "/etc" "/var" ];
+              paths = [caddyfile website];
+              pathsToLink = ["/bin" "/etc" "/var"];
             };
 
             config = {
-              Cmd = [ "caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter"  "caddyfile" ];
-              ExposedPorts = {
-                "2020" = {};
-              };
+              Cmd = [ "${pkgs.caddy}/bin/caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter"  "caddyfile" ];
+              ExposedPorts = { "2020" = {}; };
             };
           };
         };
 
-        devShells = rec {
-          default = dev;
-          dev = pkgs.mkShell {
-            buildInputs = [
-              env
-              bundixCLI
-              bundleLock
-              bundleUpdate
-            ] ++ (with pkgs; [
-              hugo
-              d2
-              gnuplot
-              mermaid-cli
-            ]);
-          };
+        devShells.default = pkgs.mkShell {
+          packages = (with pkgs; [
+            hugo_145
+            go
+
+            typos
+            lychee # link checker
+          ]);
+          shellHook = ''
+            alias v="nvim";
+            alias j="just";
+          '';
         };
       }
     );
+
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+    flake-utils.url = "github:numtide/flake-utils";
+
+    nix2container.url = "github:nlewo/nix2container";
+    nix2container.inputs.nixpkgs.follows = "nixpkgs";
+  };
 }

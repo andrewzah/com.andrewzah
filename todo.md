@@ -1,4 +1,24 @@
+## immediate todo
+- fixes
+  - decide on date / no date in slug
+    - research SEO ramifications
+  - fix any remaining .adoc pages & links
+  - double check git-lfs png/jpg etc
+  - code css: table/td w/ hugo syntax highlighting
+  - code css: add code block name styling
+  - fix post slugs, aliases, series
+  - update links to e.g. resume
+- new features
+  - clickable photos: use markdown render from hugo
+  - AWS & just
+    - add aws-cli to flake
+    - add just commands to help automate bucket syncing
+  - backlinks
+    - https://brainbaking.com/post/2024/06/visualizing-blog-post-links-with-obsidian/
+    - https://brainbaking.com/post/2022/04/true-backlink-support-in-hugo/
+
 ## todo
+- update use, now, cats pages
 - write, motherfucker. WRITE
 - pic for philips review
 - investigate optimized image generation + integration into nix flake

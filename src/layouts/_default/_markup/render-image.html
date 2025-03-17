@@ -1,10 +1,7 @@
-{{ $img := imageConfig (add "/static" (.Destination | safeURL)) }}
 
 <img
   decoding="async"
   loading="lazy"
   src="{{ .Destination | safeURL }}"
   alt="{{ .Text }}"
-  width="{{ $img.Width }}"
-  height="{{ $img.Height }}"
 />

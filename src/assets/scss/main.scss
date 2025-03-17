@@ -1,5 +1,5 @@
 @import "normalize";
-@import "rouge";
+//@import "rouge";
 
 @import "variables";
 @import "mixins";
@@ -91,14 +91,24 @@ div.imageblock {
 }
 
 // code in backticks
-div.paragraph {
-  p code {
-    background-color: rgba(104, 182, 112, .2);
-    color: #2d3436;
-    border-radius: .25em;
-    border: 1px solid rgba(104, 182, 112, .2);
-    font-family: $monospace-stack;
-    padding: .15em .25em;
+// TODO: diff padding for lineNos / no lineNOS
+div.code-section pre code {
+  display: inline-block;
+  border-radius: .25em;
+  border: 1px solid #ccc;
+  font-family: $monospace-stack;
+  padding: .15em .25em;
+  width: 100%;
+  overflow: scroll;
+}
+
+div.code-section {
+  span.code-title {
+    padding-bottom: none;
+    margin-bottom: none;
+  }
+  > pre {
+    margin-top: 0px;
   }
 }
 
