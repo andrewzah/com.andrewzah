@@ -2,7 +2,7 @@
 !flake.lock
 
 src/resources/_gen
-cache/
-public/
+src/_vendor
+src/public/
 
 result
