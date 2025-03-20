@@ -43,7 +43,13 @@
 
 .luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger span::before,.luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger span::after{margin-top:0}
 
-.luxbar-header{display:flex;flex-direction:row;justify-content:space-between;align-items:center;height:58px}
+.luxbar-header{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  height:58px;
+}
 
 .luxbar-menu-left .luxbar-navigation,.luxbar-menu-left .luxbar-header{justify-content:flex-start}
 
