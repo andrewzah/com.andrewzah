@@ -1,13 +1,6 @@
 ## immediate todo
 - fixes
-  - REMOVE hugo admonitions theme, replicate via render hooks + css
-  - code in single backticks, aka just <p><code></code></p>
-  - decide on date / no date in slug
-    - research SEO ramifications
   - fix any remaining .adoc pages & links
-  - double check git-lfs png/jpg etc
-  - code css: table/td w/ hugo syntax highlighting
-  - code css: add code block name styling
   - fix post slugs, aliases, series
   - update links to e.g. resume
 - new features
