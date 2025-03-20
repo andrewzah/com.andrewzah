@@ -60,7 +60,7 @@ This is going to vary by embassy, especially as this is quite a new visa. These 
 5. Criminal record certificate (**attached with Apostille**), certificate of medical insurance,
    and certificate of family relations (if accompanied by dependents)
 
-> [!warning]
+> [!WARNING]
 > Make sure your passport doesn’t expire within 6 months of your application, or your travel. Knowing that the South Korean government can be sticklers about things, consider expanding that to 12 months.
 
 When I applied in February, I went by the requirements of the Consulate in Chicago,

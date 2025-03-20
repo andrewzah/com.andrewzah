@@ -8,10 +8,6 @@ destination = "./public"
 title = "Andrew Zah's Site"
 titleCaseStyle = 'none'
 
-[module]
-[[module.imports]]
-  path = "github.com/KKKZOZ/hugo-admonitions"
-
 [params.author]
   name = "Andrew Zah"
   email = "zah@andrewzah.com"

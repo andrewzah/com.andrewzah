@@ -1,63 +1,6 @@
-nav {
-  padding-top: 5px;
-  max-width: 95vw;
-  margin: 0 auto;
-
-  @media only screen and (min-width: $phoneWidth)  {
-    max-width: $max-width;
-  }
-
-  @media (max-width: $phoneWidth)  {
-    hr {
-      display: none;
-    }
-  }
-
-  ul li a {
-    color: $text;
-    border-bottom: none;
-  }
-
-  ul.left-menu {
-    @include horizontal-list;
-
-    li {
-      font-weight: bold;
-    }
-  }
-
-  ul.right-menu {
-    @include horizontal-list;
-    float: right;
-  }
+li.luxbar-item a {
+  border-bottom: none;
 }
-
-//nav {
-//  font-size: 1.3em;
-//  margin-top: .3rem !important;
-//  margin-bottom: .4rem;
-//
-//  border-bottom: 1px solid #ccc;
-//
-//  a {
-//    text-decoration: none;
-//    color: $text;
-//
-//    &:hover {
-//      color: $primary-hover;
-//    }
-//  }
-//
-//  .nav-brand {
-//    border-bottom: none;
-//    font-style: italic;
-//  }
-//
-//  .nav-links {
-//    @include horizontal-list;
-//
-//    li a {
-//      border-bottom: none;
-//    }
-//  }
-//}
+li.luxbar-header a {
+  border-bottom: none;
+}

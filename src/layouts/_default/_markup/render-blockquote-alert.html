@@ -1,0 +1,44 @@
+{{- /* Map alert type to icon in layouts/partials/admonitions/icons. */}}
+{{- $icons := dict
+  "abstract"    "file-lines-solid.svg"
+  "caution"     "triangle-exclamation-solid.svg"
+  "code"        "code-solid.svg"
+  "conclusion"  "file-circle-check-solid.svg"
+  "danger"      "triangle-exclamation-solid.svg"
+  "error"       "circle-xmark-solid.svg"
+  "example"     "person-chalkboard-solid.svg"
+  "experiment"  "flask-solid.svg"
+  "goal"        "bullseye-solid.svg"
+  "idea"        "lightbulb-solid.svg"
+  "important"   "circle-exclamation-solid.svg"
+  "info"        "circle-info-solid.svg"
+  "memo"        "file-lines-solid.svg"
+  "note"        "file-pen-solid.svg"
+  "notify"      "bell-solid.svg"
+  "question"    "circle-question-solid.svg"
+  "quote"       "quote-right-solid.svg"
+  "success"     "circle-check-solid.svg"
+  "task"        "list-check-solid.svg"
+  "tip"         "lightbulb-solid.svg"
+  "warning"     "triangle-exclamation-solid.svg"
+}}
+
+{{- /* Render admonition. */}}
+{{- $type := cond (index $icons .AlertType) .AlertType "note" }}
+{{- $partial := printf "admonitions/icons/%s" (index $icons $type) }}
+{{- if templates.Exists (printf "partials/%s" $partial) }}
+  {{- $title := (or .AlertTitle (T (printf "admonitions.%s" .AlertType)) (title .AlertType)) }}
+  <div class="admonition {{ $type }}">
+    <div class="admonition-header">
+      {{ partialCached $partial . }}
+      <span>{{ strings.FirstUpper $title }}</span>
+    </div>
+    {{- with .Text }}
+      <div class="admonition-content">
+        {{ . }}
+      </div>
+    {{- end }}
+  </div>
+{{- else }}
+  {{- errorf "The blockquote-alert render hook was unable to find layouts/partials/%s." $partial }}
+{{- end }}

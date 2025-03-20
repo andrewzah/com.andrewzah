@@ -5,10 +5,12 @@
 @import "mixins";
 @import "elements";
 
-@import "components/admonition";
 @import "components/nav";
 @import "components/toc";
 @import "components/tables";
+
+@import "vendor/luxbar.min";
+@import "vendor/admonitions";
 
 article {
   max-width: 95vw;

@@ -18,6 +18,8 @@
   - backlinks
     - https://brainbaking.com/post/2024/06/visualizing-blog-post-links-with-obsidian/
     - https://brainbaking.com/post/2022/04/true-backlink-support-in-hugo/
+  - citations:
+    - https://github.com/joksas/hugo-simplecite?tab=readme-ov-file
 
 ## todo
 - update use, now, cats pages

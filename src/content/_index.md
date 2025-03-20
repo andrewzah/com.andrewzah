@@ -1,10 +1,5 @@
 +++
-title = "Homepage"
 +++
-
-> The programmer, like the poet, works only slightly removed from pure thought-stuff. He builds his castles in the air, from air, creating by exertion of the imagination. Few media of creation are so flexible, so easy to polish and rework, so readily capable of realizing grand conceptual structures.... Yet the program construct, unlike the poet's words, is real in the sense that it moves and works, producing visible outputs separate from the construct itself. 
->
-> &mdash; Fred Brooks, *The Mythical Man-Month*
 
 Welcome to my corner of the internet.
 I'm a programmer by trade, and I'm fascinated by the world we inhabit.
