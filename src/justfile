@@ -1,2 +1,5 @@
 s:
   hugo server --buildDrafts
+
+typos:
+  typos -- ./content/

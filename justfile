@@ -9,4 +9,4 @@ do:
   just docker-push
 
 dp:
-  docker push andrewzah/personal_site:latest
+  docker push docker.io/andrewzah/com-andrewzah:latest

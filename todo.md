@@ -6,7 +6,6 @@
 - new features
   - clickable photos: use markdown render from hugo
   - AWS & just
-    - add aws-cli to flake
     - add just commands to help automate bucket syncing
   - backlinks
     - https://brainbaking.com/post/2024/06/visualizing-blog-post-links-with-obsidian/

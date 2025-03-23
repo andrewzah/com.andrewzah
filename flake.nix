@@ -88,6 +88,7 @@
             hugo_145
             go
 
+            awscli2
             typos
             lychee # link checker
           ]);

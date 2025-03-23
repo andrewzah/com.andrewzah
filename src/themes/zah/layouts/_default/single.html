@@ -29,13 +29,40 @@
   {{ .Content }}
 
   {{- if or (eq .Type "posts") (eq .Type "reviews") -}}
-    <!--
-    {{ $related := first 3 (where (where .Site.RegularPages.ByDate.Reverse ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
-    Related Posts
-
-    {{ range $i, $e := $related }}
-      <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+    {{ $currRellink := substr .RelPermalink 0 -1 }}
+    {{ $currContent := .Content }}
+    {{ $backlinks := slice }}
+    {{ $forwardlinks := slice }}
+    {{ range (where (where .Site.Pages ".Section" "in" (slice "posts")) ".Params.ignore" "!=" "true") }}
+        {{ $found := findRE $currRellink .Content 1 }}
+        {{ if $found }}
+          {{ $backlinks = $backlinks | append . }}
+        {{ else }}
+          {{ $rellink := substr .RelPermalink 0 -1 }}
+          {{ $found = findRE $rellink $currContent 1 }}   
+          {{ if $found }}
+            {{ $forwardlinks = $forwardlinks | append . }}
+          {{ end }}
+        {{ end }}
     {{ end }}
+
+    {{ $related := append $backlinks $forwardlinks }}
+    {{- if ge (len $related) 1 -}}
+      <div class="seriesblock">
+        <div class="title">
+          Related Posts:
+        </div>
+        <div class="contents">
+          <ul>
+            {{ range $i, $e := $related }}
+            <li> <a href="{{ .Permalink }}">{{ .LinkTitle }}</a> </li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    {{- end -}}
+    <!--
+
     -->
     <div style="font-style: italic;" class="post-tags">
       {{ .Page.WordCount }} words

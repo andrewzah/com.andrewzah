@@ -8,7 +8,7 @@ My interests are mainly in programming and computer science, language learning, 
 although I dabble in many hobbies.
 
 ## Notable Posts
-[How I acquired the Korean Digital Nomad Visa](/posts/korean-digital-nomad-visa/): A detailed summary of all the steps I took to aquire this visa, as well as some tips for those looking to apply.
+[How I acquired the Korean Digital Nomad Visa](/posts/korean-digital-nomad-visa/): A detailed summary of all the steps I took to acquire this visa, as well as some tips for those looking to apply.
 
 [Korean Food & Cooking Vocabulary Reference](/posts/korean-cooking-eating-vocabulary-reference/):
 A vocabulary collection, all organized on a single page for ease of reference.

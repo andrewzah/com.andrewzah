@@ -1,0 +1,14 @@
+[default]
+binary = false
+ignore-hex = true
+
+locale = "en"
+extend-ignore-identifiers-re = [
+    "\\dnd", # 2nd
+]
+
+[default.extend-words]
+skools = "skools" # vans old skoolz
+
+[default.extend-identifiers]
+EIN = "EIN" # EIN
