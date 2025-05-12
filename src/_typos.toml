@@ -9,6 +9,7 @@ extend-ignore-identifiers-re = [
 
 [default.extend-words]
 skools = "skools" # vans old skoolz
+#teh = "teh"
 
 [default.extend-identifiers]
 EIN = "EIN" # EIN

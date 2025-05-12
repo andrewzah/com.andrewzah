@@ -1,13 +1,10 @@
 ---
 title: "Contact"
 date: 2024-07-17
-lastmod: 2025-03-20
+lastmod: 2025-05-03
 description: "Contact"
 slug: "contact"
 ---
-
-I'm currently in Seoul, which is GMT+9, or 14 hours ahead of the east coast, USA
-(13 hours during daylight savings).
 
 | | |
 | :---: | :---: |
@@ -21,4 +18,4 @@ Other links:
 | :---: | :---: |
 |Github |[andrewzah](https://github.com/andrewzah) |
 |mastodon / fediverse |[@andrewzah@fosstodon.org](https://fosstodon.org/@andrewzah) |
-|bluesky|[@abare.party](https://bsky.app/profile/dragonsdream.scfgc.org)|
+|bluesky|[@andrewzah.com](https://bsky.app/profile/andrewzah.com)|

@@ -2,7 +2,7 @@
 title: "Philips TAH7508 Bluetooth Headphones"
 slug: "philips-tah7508-bluetooth-headphones"
 date: "2024-08-18"
-date-modified: "2024-09-18"
+date-modified: "2025-05-12"
 categories: ["audio"]
 description: "A look at the Philips TAH7508 Bluetooth Headphones."
 ---
@@ -53,10 +53,11 @@ charging every 2-3 days.
 
 The battery life is long enough that I don't find myself worrying at all.
 
+## Update: 10 Months
+
+I'm very happy with how these have held up. The battery life seems about the same,
+I just charge every now and then.
+
 ## Info
 
 I purchased these on Coupang for ₩71,000 KRW(roughly \$58.30 USD) on 8/11 and got them on 8/12.
-
-> [!caution]
-> This is a review after ~1 week of usage.
-> I will update this review after a few months to see how it holds up.

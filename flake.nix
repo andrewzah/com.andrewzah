@@ -45,7 +45,7 @@
                   cp -r _vendor $out
                 '';
 
-                outputHash = "sha256-IWeh65+iMET/9iKjhQEVLkCpiwRA6I3se3xFjp4q360=";
+                outputHash = "sha256-pQpattmS9VmO3ZIQUFn66az8GSmB4IvYhTTCFn6SUmo=";
                 outputHashAlgo = "sha256";
                 outputHashMode = "recursive";
               };

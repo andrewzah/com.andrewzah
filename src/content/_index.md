@@ -1,6 +1,3 @@
-+++
-+++
-
 Welcome to my corner of the internet.
 I'm a programmer by trade, and I'm fascinated by the world we inhabit.
 
@@ -28,15 +25,13 @@ A vocabulary collection, all organized on a single page for ease of reference.
 ## Standing Invitation
 
 If you'd like to discuss something you think would be up my alley, feel free to
-[contact](/contact) me.
-If you require technical support, we can work out a contract.
+[reach out](/contact)!
 
 In person, I'm generally open to a coffee or coworking at a cafe, schedule permitting.
 If you see me at some conference or meetup, absolutely come up and introduce yourself&mdash;I love meeting new people.
 
 ## Links
 
-[Now](/now) |
 [Contact](/contact) |
 [Cats](/cats) |
 [Uses](/uses) |
@@ -44,4 +39,4 @@ If you see me at some conference or meetup, absolutely come up and introduce you
 [Changelog](/changelog) |
 [Friends](/friends)
 
-[Resume](/resume-andrew-zah.pdf) - Not looking for fulltime opportunities for the foreseeable future, but part time and consulting (especially for ruby/rails, rust, nix, golang) projects can be worked out.
+[Resume](/resume-andrew-zah.pdf)

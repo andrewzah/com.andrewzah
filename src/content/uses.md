@@ -1,11 +1,11 @@
-+++
-title = "Uses"
-slug = "/uses"
-date = "2024-08-19"
-lastmod = "2024-03-20"
-+++
+---
+title: "Uses"
+slug: "/uses"
+date: "2024-08-19"
+lastmod: "2025-05-03"
+---
 
-= Uses
+# Uses
 
 This is a living document of the hardware and software I use for work, personal projects, and hobbies.
 
