@@ -1,0 +1,15 @@
+{{ $tabName := .Get "name" }}
+
+{{ $tabsId := .Parent.Get "id" }}
+
+{{ $id := printf "%s-radio-%s" $tabsId $tabName }}
+
+<input type="radio" id="{{ $id }}" name="{{ $tabsId }}-selector" class="tab-radio" tabindex="0"{{ if eq .Ordinal 0 }} checked {{ end }}>
+
+<label for="{{ $id }}" class="tab-label">{{ $tabName }}</label>
+
+<div class="tab">
+
+{{ .Inner | markdownify }}
+
+</div>

@@ -1,27 +1,27 @@
 // Base colors for admonition types
 $admonition-colors: (
-  abstract:   #209fb5,
-  caution:    #e64553,
-  code:       #7287fd,
+  abstract: #209fb5,
+  caution: #e64553,
+  code: #7287fd,
   conclusion: #dd7878,
-  danger:     #fe640b,
-  error:      #d20f39,
-  example:    #dc8a78,
+  danger: #fe640b,
+  error: #d20f39,
+  example: #dc8a78,
   experiment: #51bb2a,
-  goal:       #e64553,
-  idea:       #df8e1d,
-  important:  #7D4DDA,
-  info:       #04a5e5,
-  memo:       #e64553,
+  goal: #e64553,
+  idea: #df8e1d,
+  important: #7D4DDA,
+  info: #04a5e5,
+  memo: #e64553,
   //note:       #096ae1,
-  note:       #40a02b,
-  notify:     #0d48bd,
-  question:   #179299,
-  quote:      #7287fd,
-  success:    #40a02b,
-  task:       #8839ef,
-  tip:        #179299,
-  warning:    #df8e1d
+  note: #40a02b,
+  notify: #0d48bd,
+  question: #179299,
+  quote: #7287fd,
+  success: #40a02b,
+  task: #8839ef,
+  tip: #179299,
+  warning: #df8e1d
 );
 
 // Theme colors
@@ -70,20 +70,30 @@ $dark-blockquote-border: #45475a;
 
   p {
     margin: 0 0 0.5rem 0;
-    &:last-child { margin-bottom: 0; }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
-  ul, ol {
+  ul,
+  ol {
     margin: 0 0 0.5rem 0;
     padding-left: 1.2rem;
-    &:last-child { margin-bottom: 0; }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   blockquote {
     margin: 0 0 0.5rem 0;
     padding-left: 1rem;
     border-left: 3px solid $light-blockquote-border;
-    &:last-child { margin-bottom: 0; }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   code {
@@ -135,7 +145,7 @@ body.dark {
   .admonition.#{$type} {
     background: transparent;
     border-left: 4px solid $color;
-    
+
     .admonition-header {
       background: rgba($color, 0.1);
       color: $color;

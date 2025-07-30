@@ -8,6 +8,7 @@
 @import "components/nav";
 @import "components/toc";
 @import "components/tables";
+@import "components/post-tabs";
 
 @import "vendor/luxbar.min";
 @import "vendor/admonitions";
@@ -17,7 +18,7 @@ article {
   margin: 0 auto;
   padding-bottom: 1rem;
 
-  @media only screen and (min-width: $phoneWidth)  {
+  @media only screen and (min-width: $phoneWidth) {
     max-width: $max-width;
   }
 
@@ -25,14 +26,22 @@ article {
     margin: auto 0px;
   }
 
-  div.sec2, > div.sect1 {
-    h1,h2,h3,h4,h5,h6 {
+  div.sec2,
+  >div.sect1 {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       margin-top: .5em;
       margin-bottom: .25em;
     }
   }
 
-  div.sect1 > h2 > a, div.sect2 > h3 > a {
+  div.sect1>h2>a,
+  div.sect2>h3>a {
     border-bottom: none;
     color: $text;
 
@@ -41,7 +50,7 @@ article {
     }
   }
 
-  > div.sect1 a.link {
+  >div.sect1 a.link {
     &:hover {
       &:after {
         content: ' \00A7';
@@ -49,7 +58,7 @@ article {
     }
   }
 
-  p > code {
+  p>code {
     //background-color: $primary;
     background-color: rgba(104, 182, 112, .2);
     padding: 1px 2px;
@@ -61,11 +70,11 @@ article {
 
 // https://stackoverflow.com/a/31461807
 div.imageblock.full-width {
-  > div.content {
+  >div.content {
     display: block !important;
     text-align: center !important;
 
-    > img {
+    >img {
       text-align: center;
 
       margin-left: calc(-50vw + 50%) !important;
@@ -89,13 +98,14 @@ div.imageblock.full-width {
 }
 
 div.imageblock.center-img {
-  > div.content > img {
+  >div.content>img {
     display: block;
     margin: 0 auto;
   }
 }
+
 div.imageblock {
-  > div.title {
+  >div.title {
     font-style: italic;
     text-align: center;
   }
@@ -104,12 +114,17 @@ div.imageblock {
 // code in backticks
 // TODO: diff padding for lineNos / no lineNOS
 div.code-section {
-  >span {
-    //background-color: rgba(104, 182, 112, 1);
+  span.code-title {
+    font-family: $monospace-stack;
     background-color: $primary;
     color: #fff;
+    border-top-left-radius: .15em;
+    border-top-right-radius: .15em;
+
     padding-left: 5px;
     padding-right: 5px;
+    padding-bottom: 3px;
+    padding-top: 3px;
   }
 
   pre code {
@@ -131,7 +146,8 @@ div.code-section {
     padding-bottom: none;
     margin-bottom: none;
   }
-  > pre {
+
+  >pre {
     margin-top: 0px;
   }
 }
@@ -141,6 +157,7 @@ div.listing {
     padding: 0;
     margin: 0;
   }
+
   ul {
     list-style: none;
     margin: 0;
@@ -219,7 +236,7 @@ div.listingblock {
     //}
   }
 
-  div.content > pre.rouge.highlight {
+  div.content>pre.rouge.highlight {
     margin: 0 auto;
     //border: 1px solid #ccc;
     line-height: 1.2;
@@ -227,7 +244,7 @@ div.listingblock {
   }
 }
 
-div.listingblock + div.colist.arabic {
+div.listingblock+div.colist.arabic {
   margin-top: 0px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -250,20 +267,22 @@ article div.content {
   }
 }
 
-.exampleblock, .literalblock {
+.exampleblock,
+.literalblock {
   border: 1px solid #c1c1c1;
   border-radius: .25em;
   margin: .25em auto;
   background-color: rgba(200, 200, 200, 0.1);
   border-radius: .25em;
 
-  > div.content {
+  >div.content {
     padding-left: .25em;
     padding-right: .25em;
   }
 }
+
 .exampleblock {
-  > div.title {
+  >div.title {
     padding: .25em .5em;
     background-color: rgba(80, 80, 80, 0.1);
     display: inline-block;
@@ -271,7 +290,8 @@ article div.content {
     font-style: italic;
   }
 }
-.literalblock > div.content > pre {
+
+.literalblock>div.content>pre {
   margin: .25em;
 }
 
@@ -285,10 +305,13 @@ article div.content {
     color: #2d3436;
     background-color: rgba(104, 182, 112, .1);
   }
-  div.title, div.contents {
+
+  div.title,
+  div.contents {
     padding: .25em;
   }
-  div.contents > ul {
+
+  div.contents>ul {
     margin: 0px;
     padding: .5em;
     padding-left: 1.5em;
@@ -296,13 +319,16 @@ article div.content {
   }
 }
 
-div.content > a.image {
+div.content>a.image {
   border-bottom: none;
 }
 
-div.dlist > dl {
-  > dt { font-weight: bold; }
-  > dd > p {
+div.dlist>dl {
+  >dt {
+    font-weight: bold;
+  }
+
+  >dd>p {
     margin: .25em;
   }
 }
@@ -319,14 +345,19 @@ div.dlist > dl {
 //  -webkit-transform: translateX(-50%);
 //}
 
-div.ulist > ul {
+div.ulist>ul {
   margin-left: 1rem;
   margin-top: .25rem;
   margin-bottom: .25rem;
   padding-left: 0px;
 
-  > li > p {
+  >li>p {
     margin-top: .25rem;
     margin-bottom: .25rem;
   }
+}
+
+// fix margin on codeblocks inside admonitions
+div.admonition pre.chroma {
+  margin-bottom: 0px;
 }
