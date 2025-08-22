@@ -1,4 +1,7 @@
 ## immediate todo
+
+- redo theme: https://piegames.de/dumps/pinning-nixos-with-npins-revisited/
+
 - fixes
   - fix any remaining .adoc pages & links
   - fix post slugs, aliases, series
@@ -14,13 +17,16 @@
     - https://github.com/joksas/hugo-simplecite?tab=readme-ov-file
 
 ## todo
+
 - update use, now, cats pages
 - write, motherfucker. WRITE
 - pic for philips review
 - investigate optimized image generation + integration into nix flake
 
 ## potential alterations:
-- blog comments via ssh, https://blog.haschek.at/2023/ssh-based-comment-system.html
+
+- blog comments via ssh,
+  https://blog.haschek.at/2023/ssh-based-comment-system.html
   - special logo/color for users with verified ssh keys?
   - approve/deny via telegram / discord bot ?
 - series

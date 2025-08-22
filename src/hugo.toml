@@ -18,10 +18,11 @@ titleCaseStyle = 'none'
 
 [markup]
   [markup.highlight]
+    noClasses = false
     # abap, autumn, github
     # https://gohugo.io/quick-reference/syntax-highlighting-styles/#github
-    style = 'github'
-    lineNos = 'false'
+    #style = 'github'
+    #lineNos = 'false'
     #lineNumbersInTable = 'true'
 
 [menu]

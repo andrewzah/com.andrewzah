@@ -1,25 +1,18 @@
 <div id="luxbar" class="luxbar-default">
   <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/>
-  <div class="luxbar-menu luxbar-menu-right luxbar-menu-material-green">
+  <div class="luxbar-menu luxbar-menu-right luxbar-menu-light">
     <ul class="luxbar-navigation">
       <li class="luxbar-header">
-        <a href="/" class="luxbar-brand">Andrew Zah</a>
+        <a href="/" class="luxbar-brand">andrewzah.com</a>
         <label class="luxbar-hamburger luxbar-hamburger-doublespin"
         id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
       </li>
+
+      <li class="luxbar-item"></li>
       <li class="luxbar-item"><a href="/posts">posts</a></li>
       <li class="luxbar-item"><a href="/reviews">reviews</a></li>
       <li class="luxbar-item"><a href="/contact">contact</a></li>
     </ul>
   </div>
 </div>
-
-    <!--
-    <li class="luxbar-header"><a class="luxbar-brand" href="/">
-        <img src="/favicon-32x32.png">
-        Andrew Zah | 자준재
-    </a></li>
-    <li><a href="/posts/index.xml">rss</a></li>
-    <li><a href="/openbook">openbook</a></li>
-    <li><a href="/reviews">reviews</a></li>
-    -->
+{{ partial "themetoggle.html" }}

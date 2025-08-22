@@ -1,3 +1,12 @@
+{{ $js := resources.Get "js/index.js" }}
+{{ $sourceMap := cond hugo.IsProduction "" "" }}
+{{ $params := dict }}
+{{ $opts := dict "sourceMap" $sourceMap "minify" hugo.IsProduction "target" "es2018" "params" $params }}
+{{ $js = $js | js.Build $opts }}
+{{ if hugo.IsProduction }}
+  {{ $js = $js | fingerprint }}
+{{ end }}
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">

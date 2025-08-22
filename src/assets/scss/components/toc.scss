@@ -7,12 +7,14 @@ details {
 
   nav#TableOfContents {
     padding-bottom: .5em;
+
     >ul {
       margin: auto 0px;
 
       // h2 and h3
-      >li a, >li>ul>li>a {
-        border-bottom: 1px dotted #000000;
+      >li a,
+      >li>ul>li>a {
+        border-bottom: 1px dotted var(--text-color);
       }
     }
   }

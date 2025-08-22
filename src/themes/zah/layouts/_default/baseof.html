@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ $.Site.LanguageCode }}">
+<html lang="{{ $.Site.LanguageCode }}" data-theme="light">
   {{- partial "header.html" . -}}
 
   <body>
@@ -10,7 +10,26 @@
       {{- partialCached "footer.html" . -}}
     </article>
 
-    <script data-goatcounter="https://stats.andrewzah.com/count"
-      async src="//stats.andrewzah.com/count.js"></script>
+
+      {{ with resources.Get "js/index.js" }}
+        {{$opts := dict
+          "minify" (not hugo.IsDevelopment)
+          "sourceMap" (cond hugo.IsDevelopment "external" "")
+          "targetPath" "js/index.js"
+        }}
+        {{ with . | js.Build $opts }}
+          {{ if hugo.IsDevelopment }}
+            <script src="{{ .RelPermalink }}"></script>
+          {{ else }}
+            {{ with . | fingerprint }}
+              <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+      {{ if hugo.IsProduction }}
+        <script data-goatcounter="https://stats.andrewzah.com/count"
+        async src="//stats.andrewzah.com/count.js"></script>
+      {{ end }}
   </body>
 </html>
