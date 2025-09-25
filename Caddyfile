@@ -1,14 +1,14 @@
 :2020 {
-  root * /var/www/com.andrewzah
+  root * /var/www/com.andrewzah.blog
+  encode gzip
+  try_files {path} {uri}.html /index.html
   file_server
 
-  encode gzip
-
-  handle_errors {
-    @404 {
-      expression {http.error.status_code} == 404
-    }
-    rewrite @404 /404.html
-    file_server
-  }
+  #handle_errors {
+  #  @404 {
+  #    expression {http.error.status_code} == 404
+  #  }
+  #  rewrite @404 /404.html
+  #  file_server
+  #}
 }

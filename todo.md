@@ -1,6 +1,9 @@
 ## immediate todo
 
-- redo theme: https://piegames.de/dumps/pinning-nixos-with-npins-revisited/
+- uses page
+- update cats page
+- tags list page: explain meaning
+- custom cursors?
 
 - fixes
   - fix any remaining .adoc pages & links

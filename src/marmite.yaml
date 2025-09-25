@@ -1,0 +1,59 @@
+name: andrew zah's thoughts
+tagline: "something witty here"
+colorscheme: "one"
+url: "https://andrewzah.com"
+footer: ""
+language: "en"
+pagination: 15
+pages_title: Pages
+tags_title: Tags
+tags_content_title: Posts tagged with '$tag'
+archives_title: Archive
+archives_content_title: Posts from '$year'
+streams_title: Streams
+streams_content_title: ""
+streams:
+  tutorials:
+    display_name: "Tutorials"
+  reviews:
+    display_name: "Reviews"
+authors_title: Authors
+enable_search: true
+enable_related_content: true
+search_title: "Search"
+content_path: content
+site_path: ""
+templates_path: templates
+static_path: static
+media_path: media
+card_image: ""
+banner_image: ""
+logo_image: ""
+default_date_format: "%b %e, %Y"
+publish_md: true
+menu:
+  - ["Tags", "tags.html"]
+  - ["Streams", "streams.html"]
+  - ["Reviews", "reviews.html"]
+default_author: "Andrew Zah"
+authors:
+  andrewzah:
+    name: Andrew Zah
+    avatar: https://github.com/andrewzah.png
+    bio: Testy Bio
+    links:
+      - ["Website", "https://andrewzah.com"]
+      - ["Github", "https://github.com/andrewzah"]
+toc: true
+json_feed: false
+series:
+  living-in-korea:
+    display_name: "Day-to-Day Life in South Korea"
+extra:
+  colorscheme_toggle: true
+markdown_parser:
+  extension:
+    greentext: false
+    multiline_block_quotes: true
+  # wikilinks_title_before_pipe: false
+  # wikilinks_title_after_pipe: true
